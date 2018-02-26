@@ -1,0 +1,135 @@
+.paytibigbox {
+  height: 100%;
+  width: 7.5rem;
+  background: #f0f0f0;
+  font-size: 0.3rem;
+  color: #353535; }
+  .paytibigbox p {
+    background: #fff;
+    height: 0.82rem;
+    line-height: 0.82rem;
+    font-size: 0.24rem; }
+    .paytibigbox p i {
+      width: 0.22rem;
+      height: 0.22rem;
+      display: block;
+      float: left;
+      margin-top: 0.3rem;
+      margin-left: 0.4rem;
+      margin-right: 0.2rem; }
+      .paytibigbox p i img {
+        height: 100%;
+        float: left; }
+  .paytibigbox .tibox {
+    width: 100%;
+    height: 3rem;
+    margin-bottom: 0.2rem; }
+    .paytibigbox .tibox p {
+      width: 7.1rem;
+      margin-left: 0.4rem;
+      background: #f0f0f0;
+      height: 1rem;
+      line-height: 1rem;
+      font-size: 0.26rem;
+      color: #888; }
+    .paytibigbox .tibox .name {
+      height: 1rem;
+      width: 100%;
+      background: #fff;
+      line-height: 1rem;
+      padding-left: 0.4rem;
+      font-size: 15px; }
+      .paytibigbox .tibox .name input {
+        font-size: 0.26rem;
+        color: #888;
+        border: none;
+        margin-left: 0.6rem;
+        height: 0.5rem; }
+      .paytibigbox .tibox .name input:focus {
+        outline: none; }
+  .paytibigbox .ti {
+    height: 2.4rem;
+    background: #fff; }
+    .paytibigbox .ti p {
+      font-size: 13px;
+      margin-left: 0.4rem;
+      float: left;
+      height: 0.7rem;
+      line-height: 0.7rem; }
+    .paytibigbox .ti .yu {
+      color: #D41C1C;
+      margin-right: 0.4rem;
+      float: right;
+      height: 0.7rem;
+      line-height: 0.7rem; }
+      .paytibigbox .ti .yu span {
+        font-size: 0.24rem; }
+    .paytibigbox .ti .inputbox {
+      width: 100%;
+      height: 1.1rem;
+      float: left; }
+      .paytibigbox .ti .inputbox i {
+        width: 0.28rem;
+        height: 0.36rem;
+        display: block;
+        float: left;
+        margin-left: 0.4rem;
+        margin-top: 0.4rem;
+        margin-right: 0.1rem; }
+        .paytibigbox .ti .inputbox i img {
+          height: 100%; }
+      .paytibigbox .ti .inputbox input {
+        width: 6.32rem;
+        float: left;
+        height: 0.82rem;
+        border: 0;
+        border-bottom: thin solid #cecece;
+        font-size: 0.5rem;
+        margin-left: 0; }
+      .paytibigbox .ti .inputbox input:focus {
+        outline: none; }
+      .paytibigbox .ti .inputbox .wenti {
+        font-size: 0.22rem;
+        width: 6.22rem;
+        float: left;
+        height: 0.22rem;
+        margin: 0 auto;
+        margin-left: 0.75rem;
+        margin-top: 0.1rem;
+        color: #888; }
+        .paytibigbox .ti .inputbox .wenti i {
+          width: 0.25rem;
+          height: 0.25rem;
+          display: block;
+          float: right;
+          margin: 0; }
+          .paytibigbox .ti .inputbox .wenti i img {
+            height: 100%; }
+  .paytibigbox .other {
+    font-size: 0.26rem;
+    float: left;
+    margin-left: 0.4rem;
+    margin-top: 0.2rem;
+    color: #888; }
+  .paytibigbox .allti {
+    background: none;
+    float: right;
+    margin-right: 0.4rem;
+    font-size: 0.28rem;
+    margin-top: 0.2rem;
+    height: auto;
+    color: #1C82D4; }
+  .paytibigbox .shenti {
+    width: 6.82rem;
+    height: 1rem;
+    line-height: 1rem;
+    background: #1C82D4;
+    color: #fff;
+    border-radius: 0.1rem;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 3.4rem;
+    font-size: 0.36rem;
+    margin-left: 0.35rem; }
+
+/*# sourceMappingURL=payti.css.map */

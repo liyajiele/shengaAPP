@@ -1,0 +1,47 @@
+<div class="searchbigbox">
+	<div class="searchtop">
+        <div class="leftarrows" ng-click="back()">
+            <img src="images/code/leftArrows.png" alt="">
+        </div>
+        <div class="searchkuang">
+            <input type="text" placeholder="附近搜索：胖哥两"  class="search" value="" ng-model="searchstr" ng-focus="aa()">
+            <i><img src="images/search/search.png" alt=""></i>
+        </div>
+        <div class="sousuo" ng-click="search(searchstr)">搜索</div>
+    </div>
+	<div class="searchqian">
+	    <div class="hotsearch">
+	        <p> 热门搜索</p>
+	        <ul class="research">
+	            <li ng-bind="hot.content" ng-repeat="hot in hotsearch">
+	            	<!--<div class="hot"><img src="images/search/hot.png" alt=""></div>-->
+	            </li>
+	        </ul>
+	    </div>
+	    <div class="hotsearch">
+	        <p> 历史记录 <i ng-click="del()"><img src="images/search/laji.png" alt="" class="laji"></i></p>
+	        <ul class="research">
+	            <li ng-bind="code.content" ng-repeat="code in searchrecord"></li>
+	        </ul>
+	    </div>
+	</div>
+	<div class='searchhou' infinite-scroll='merchant.nearmerchant(searchstr)' infinite-scroll-disabled='merchant.merchantBusy' infinite-scroll-distance='1'>
+		<ul>
+			<li ng-repeat="mer in merchant.merchantArray|filter:searchstr" ng-click="xuan(mer.id)"  class="aa">
+				<p ng-bind="mer.nickname"></p>
+				<div class="addrr">
+					<span>[</span>
+					<div ng-bind="mer.addr"></div>
+					<span>]</span>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="nofind" ng-show="isShow">
+		<img src="images/search/no.png" alt="" />
+		<p>没有搜索到你要的店铺哦~</p>
+	</div>
+	
+    
+    
+</div>

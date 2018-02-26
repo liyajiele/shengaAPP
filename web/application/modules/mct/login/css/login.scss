@@ -1,0 +1,57 @@
+/*#container div, #container ul, #container img {
+    float: none;
+}*/
+.login_main{
+    height: 100%;
+    width: 7.5rem;
+    background: #FFFFFF;
+    .login_tp{
+        width: 100%;
+        text-align:center;
+        padding-top: 1.42rem;
+        
+        img{
+            width: 1.76rem;
+            height: 1.76rem;
+            display: inline-block;
+            /*margin-left: 38%;*/
+        }
+    } 
+    .login_main{
+        width:100%;
+        background: #fff;
+        height:auto;
+        padding-top:1.42rem;
+        overflow: hidden;
+        font-size: 0.3rem;
+        
+        p{
+            border-bottom: 1px solid #DEDEDE;
+            margin-left: 0.32rem;
+            height: 1rem;
+            line-height: 1rem;
+        }
+        .right{
+            font-size: 0.26rem;
+            color: #D73939;
+            margin-right: 0.4rem;
+            margin-top: 0.3rem;
+        }
+    }
+    .login_btn{
+        width: 6.82rem;
+        height: 0.98rem;
+        line-height: 0.98rem;
+        border-radius: 4px;
+        background: #1C82D4;
+        color: #FFFFFF;
+        text-align-last: center;
+        margin: 0 auto;
+        font-size: 0.34rem;
+        margin-top: 2.16rem;
+    }
+    .main_cont{
+        background: #FFFFFF;
+    }
+
+}

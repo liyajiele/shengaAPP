@@ -1,0 +1,62 @@
+
+.storezhangxin{
+    h1{
+        width: 7.5rem;
+        height: 1rem;
+        line-height: 1rem;
+        background: #FFFFFF;
+        font-size: 0.26rem;
+        text-indent: 0.4rem;
+    }
+    .zxleft{
+        width: 3.74rem;
+        height: 1.2rem;
+        background: #FFFFFF;
+        text-align: center;
+        line-height: 0.4rem;
+        font-size: 0.26rem;
+        span{
+            margin-top: 0.2rem;
+            display: inline-block;
+            color: #1CB1D4;
+        }
+    }
+    .zxright{
+        width: 3.74rem;
+        height: 1.2rem;
+        background: #FFFFFF;
+        text-align: center;
+        line-height: 0.4rem;
+        font-size: 0.26rem;
+        span{
+            margin-top: 0.2rem;
+            display: inline-block;
+            color: #1CB1D4;
+        }
+    }
+    .boxxia{
+        width:100%;
+        height: auto;
+        margin-top: 0.22rem;
+    }
+    .hez{
+        width: 2.47rem;
+        height: 2.5rem;
+        background: #FFFFFF;
+        margin-left:1px;
+        margin-top: 1px;
+        text-align: center;
+        font-size: 0.26rem;
+//      line-height: 1.5rem;
+        img{
+            text-align: center;
+//          width: 0.67rem;
+            height: 0.52rem;
+            display: inline-block;
+            margin: 0.65rem 0 0.3rem 0;
+        }
+    }
+}
+#container div, #container ul, #container img {
+     float: left;
+}

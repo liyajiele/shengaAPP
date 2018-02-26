@@ -1,0 +1,307 @@
+.nobox{
+    background: #ddedff;
+     width: 7.5rem;
+    height:100%;
+    margin: 0;
+    padding: 0;
+}
+.noyaobigbox{
+  width: 7.5rem;
+  height:100%;
+  background: url("../../../../../images/pack/background.png");
+  background-size: cover;
+  position: relative;
+  font-size: 0.28rem;
+  color:#353535 ;
+  background-repeat: no-repeat;
+
+  .packfloat{
+    height: 0.7rem;
+    width: 100%;
+    background: rgba(255,255,255,0.1);
+    position: absolute;
+    top: 0.4rem;
+    .laba{
+      width: 0.3rem;
+      margin-top: 0.2rem;
+      margin-left: 1rem;
+      float: left;
+      img{
+        width:100%;
+      }
+    }
+    .toplan{
+      height: 0.7rem;
+      width:4rem;
+      overflow: hidden;
+      float: left;
+      position: relative;
+
+      .landong{
+        height: 0.7rem;
+        width:300%;
+        position: absolute;
+        top:0;
+        left:0;
+        li{
+          height: 0.7rem;
+          width: 4rem;
+          font-size: 0.23rem;
+          color: #fff;
+          float: left;
+          line-height: 0.7rem;
+          margin-left: 0.55rem;
+          letter-spacing: 0.02rem;
+          span{
+            color: yellow;
+          }
+        }
+      }
+    }
+
+
+
+    .hotpack{
+      margin-top: 0.1rem;
+      width: 0.5rem;
+      height: 0.5rem;
+      margin-left: 0.1rem;
+      float: left;
+      img{
+        width:100%;
+      }
+    }
+  }
+  .ruler{
+    height: 1.4rem;
+    width: 6.7rem;
+    position: absolute;
+    top: 8.25rem;
+    left: 0.4rem;
+
+    .title{
+      width: 100%;
+      text-align: center;
+      
+      .rulerleft{
+        width: 50%;
+        float: left;
+        
+        img{
+            width: 0.3rem;
+            height: 0.3rem;
+            float: left;
+        }
+        p{
+            float: left;
+            color: #da4e4e;
+            margin-left: 0.1rem
+        }
+      }
+      .rulerright{
+          float: right;
+          width: 50%;
+          
+          span{
+            float: right;
+            line-height: 0.4rem;
+            height: 0.4rem;
+            color: #da4e4e;
+          }
+          i{
+            width: 0.2rem;
+            height: 0.15rem;
+            float: right;
+            margin-left: 0.1rem;
+            margin-top: 0.03rem;
+            img{
+              height:100%;
+            }
+          }
+      }
+      
+    }
+    ul{
+      width: 7rem;
+      margin-top: 0.2rem;
+      margin-left: 0.3rem;
+      li{
+        float: left;
+        margin-left: 0.2rem;
+        margin-top: 0.2rem;
+        font-size: 0.24rem;
+        //margin-right:0.4rem;
+      }
+    }
+    .redgang{
+        text-align: center;
+        margin-top: 0.5rem;
+        color: #888;
+        position: relative;
+        i{
+            position: absolute;
+            width: 0.7rem;
+            border-top: 0.02rem solid #CCCCCC;
+            top: 0.15rem;
+            display: block;
+        }
+        i:nth-child(1){
+            float: left;
+            left: 0;
+        }
+        i:nth-child(3){
+            float: right;
+            right: 0;
+        }
+        span{
+            position: absolute;
+            left: 1rem;
+            float: left;
+        }
+    }
+
+  }
+
+  .packmess{
+    height: auto;
+    width: 6.7rem;
+    margin: 0 auto;
+    position: absolute;
+    left: 0.35rem;
+    top: 9.2rem;
+    overflow: scroll;
+//  display: none;
+
+    p{
+      width: 100%;
+      height: 0.7rem;
+      background: #fee94e;
+      border-radius: 0.1rem;
+      text-align: center;
+      line-height: 0.7rem;
+      color: #db483c;
+    }
+    .packmesslist{
+      height: 1.8rem;
+      width: 100%;
+      margin: 0 auto;
+      overflow: hidden;
+
+      li{
+        height: 0.6rem;
+        line-height: 0.6rem;
+        color: yellow;
+        background: #373a41;
+        border-radius: 1rem;
+
+        span{
+          color: #fff;
+          float: left;
+          padding-left: 0.6rem;
+          padding-right: 0.1em;
+        }
+        .qiang{
+          color: yellow;
+          padding-left: 1.1rem;
+        }
+        i{
+          float: left;
+          margin-top: 0.07rem;
+          width: 0.25rem;
+          height: 0.4rem;
+          margin-left: 0.15rem;
+          img{
+            width:100%;
+          }
+        }
+      }
+    }
+  }
+
+  .tou{
+    width: 7.5rem;
+    height: 100%;
+    background: #000;
+    position: absolute;
+    top: 0;
+    opacity: 0.4;
+    display: none;
+  }
+  
+  .packbig{
+    width: 5.7rem;
+    height: 7rem;
+    padding-top: 2rem;
+    margin-left: 1rem;
+    position: relative;
+    z-index:99;
+    display: none;
+    
+    .packbei{
+      width: 5.7rem;
+      height: 5.8rem;
+      background: url(../../../../../images/pack/hongbei.png);
+      background-size: contain;
+    }
+    
+    .qian{
+      width: 4rem;
+      height: 0.85rem;
+      position: absolute;
+      top: 4.5rem;
+      left: 0.9rem;
+      font-size: 0.45rem;
+      text-align: center;
+      line-height: 0.85rem;
+      color: #db483c;
+
+      span{
+        font-size:0.8rem;
+        float: none;
+      }
+    }
+    .dianji{
+      height: 0.7rem;
+      width: 5.22rem;
+      background: yellow;
+      text-align: center;
+      font-size: 0.3rem;
+      line-height: 0.7rem;
+      left: 0.3rem;
+      border-radius: 0.1rem;
+      top: 8.4rem;
+      position: absolute;
+      color: red;
+    }
+  }
+  
+    .packno{
+        width: 5.7rem;
+        height: 7rem;
+        padding-top: 2rem;
+        margin-left: 1rem;
+        position: relative;
+        z-index:99;
+        display: none;
+        
+        .packbeino{
+          width: 5.7rem;
+          height: 5.8rem;
+          background: url(../../../../../images/pack/no.png);
+          background-size: contain;
+        }
+        .dianji{
+          height: 0.7rem;
+          width: 5.22rem;
+          background: yellow;
+          text-align: center;
+          font-size: 0.3rem;
+          line-height: 0.7rem;
+          left: 0.3rem;
+          border-radius: 0.1rem;
+          top: 8.4rem;
+          position: absolute;
+          color: red;
+        }
+    }
+}

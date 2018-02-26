@@ -1,0 +1,56 @@
+
+<section class="content-header">
+  <h1>广告管理</h1>
+</section>
+<section class="content">
+  <div class="shenga-title">
+    <span class="shenga-title-left">广告管理</span>
+    <div class="shenga-title-right">
+      <button  class="btn btn-xs btn-primary" style="background: #2692FF" ng-click="addBanner()">添加</button>
+    </div>
+  </div>
+  <div style="background: #fff">
+    <table id="advertise-table" class="table"></table>
+  </div>
+</section>
+
+<div id="addAdvertise" style="display:none;">
+  <form method="post" class="form-horizontal" id="col">
+
+    <div class="form-group">
+      <label class="col-sm-2 control-label">图片</label>
+      <div class="col-sm-10">
+        <input type="file"  id="img"/>
+      </div>
+    </div>
+    <div class="form-group">
+      <label  class="col-sm-2 control-label">图片地址</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="imgurl"
+               placeholder="请输入地址">
+      </div>
+    </div>
+    <div class="form-group">
+      <label  class="col-sm-2 control-label">详情</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="content"
+               placeholder="请输入详情">
+      </div>
+    </div>
+    <div class="form-group">
+      <label  class="col-sm-2 control-label">轮播时间</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="time"
+               placeholder="轮播时间">
+      </div>
+    </div>
+    <div class="form-group">
+      <label  class="col-sm-2 control-label">优先级</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="pr"
+               placeholder="优先级">
+      </div>
+    </div>
+  </form>
+</div>
+

@@ -1,0 +1,217 @@
+.paysuccessbigbox {
+  height: auto;
+  width: 7.5rem;
+  overflow: scroll;
+  background: #F0F0F0;
+  color: #353535; }
+  .paysuccessbigbox .paysucctop {
+    height: 4.22rem;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 0.1rem; }
+    .paysuccessbigbox .paysucctop .succimg {
+      width: 1.73rem;
+      height: 2.3rem;
+      margin: 0 auto;
+      padding-top: 0.4rem; }
+      .paysuccessbigbox .paysucctop .succimg img {
+        width: 100%; }
+    .paysuccessbigbox .paysucctop p {
+      width: 100%;
+      text-align: center;
+      font-size: 18px;
+      margin-top: 0.2rem;
+      font-weight: 700;
+      padding: 0; }
+    .paysuccessbigbox .paysucctop .fanindex {
+      width: 1.8rem;
+      height: 0.6rem;
+      border: 0.01rem solid #1C82D4;
+      color: #1C82D4;
+      text-align: center;
+      line-height: 0.6rem;
+      margin: 0 auto;
+      margin-top: 0.2rem;
+      font-size: 15px;
+      border-radius: 1rem; }
+  .paysuccessbigbox .mess {
+    width: 100%;
+    height: 2.26rem;
+    background: #FFFFFF; }
+    .paysuccessbigbox .mess .messtop {
+      width: 6.72rem;
+      margin: 0 auto;
+      display: block;
+      height: 0.9rem;
+      border-bottom: 0.01rem solid #EFEFEF;
+      line-height: 0.9rem;
+      text-align: left;
+      font-size: 18px;
+      position: relative; }
+      .paysuccessbigbox .mess .messtop h1 {
+        float: left;
+        margin: 0 auto;
+        display: block;
+        height: 0.9rem;
+        line-height: 0.9rem;
+        text-align: left;
+        font-size: 18px; }
+      .paysuccessbigbox .mess .messtop .detailscang {
+        width: 0.45rem;
+        height: 0.45rem;
+        float: right;
+        position: absolute;
+        right: 0;
+        top: 0.25rem; }
+        .paysuccessbigbox .mess .messtop .detailscang img {
+          height: 100%;
+          float: left; }
+    .paysuccessbigbox .mess .messbo {
+      width: 6.72rem;
+      margin: 0 auto;
+      height: 0.4rem;
+      line-height: 0.4rem; }
+      .paysuccessbigbox .mess .messbo p {
+        font-size: 13px;
+        float: left;
+        width: 32%;
+        padding: 0; }
+        .paysuccessbigbox .mess .messbo p span {
+          font-size: 12px;
+          margin-left: 0.1rem; }
+        .paysuccessbigbox .mess .messbo p .reda {
+          color: red; }
+        .paysuccessbigbox .mess .messbo p .greena {
+          color: green; }
+      .paysuccessbigbox .mess .messbo p:nth-child(2) {
+        float: left;
+        width: auto;
+        margin-left: 0.5rem; }
+    .paysuccessbigbox .mess .messbo {
+      margin-top: 0.2rem; }
+  .paysuccessbigbox .seller_list {
+    width: 100%;
+    height: auto;
+    margin-top: 0.2rem;
+    margin-bottom: 1rem; }
+    .paysuccessbigbox .seller_list .list_header {
+      background: #fff;
+      width: 100%;
+      height: 1rem;
+      border-bottom: 0.01rem solid #F0F0F0; }
+      .paysuccessbigbox .seller_list .list_header span {
+        float: left;
+        font-size: .32rem;
+        line-height: 1rem;
+        margin-left: .4rem; }
+      .paysuccessbigbox .seller_list .list_header .change_list_btn {
+        margin-right: 0.4rem;
+        float: right; }
+        .paysuccessbigbox .seller_list .list_header .change_list_btn span {
+          font-size: .28rem;
+          color: #1C82D4;
+          float: left; }
+        .paysuccessbigbox .seller_list .list_header .change_list_btn img {
+          width: .34rem;
+          height: .27rem;
+          margin-top: .365rem; }
+    .paysuccessbigbox .seller_list .list_contents {
+      width: 100%;
+      height: 100%;
+      overflow: scroll; }
+      .paysuccessbigbox .seller_list .list_contents .list_content {
+        width: 100%;
+        height: 100%; }
+        .paysuccessbigbox .seller_list .list_contents .list_content li {
+          float: left;
+          background: #fff;
+          width: 7.5rem;
+          padding-left: 0.4rem;
+          margin-bottom: 0.2rem; }
+          .paysuccessbigbox .seller_list .list_contents .list_content li .seller_avatar {
+            width: 2rem;
+            height: 2rem;
+            margin-top: .2rem;
+            margin-bottom: 0.2rem;
+            float: left; }
+          .paysuccessbigbox .seller_list .list_contents .list_content li .seller_infos {
+            width: 4.8rem;
+            height: 2rem;
+            margin-left: .25rem;
+            margin-top: .2rem;
+            margin-bottom: 0.2rem;
+            float: left; }
+            .paysuccessbigbox .seller_list .list_contents .list_content li .seller_infos .seller_name {
+              color: #353535;
+              font-size: .34rem;
+              width: 3rem;
+              line-height: .34rem;
+              overflow: hidden;
+              float: left; }
+            .paysuccessbigbox .seller_list .list_contents .list_content li .seller_infos .seller_distence {
+              width: 1rem;
+              font-size: .28rem;
+              color: #888888;
+              float: right;
+              margin-right: 0.4rem;
+              text-align: right; }
+            .paysuccessbigbox .seller_list .list_contents .list_content li .seller_infos .seller_position {
+              width: 100%;
+              height: .3rem;
+              line-height: .3rem;
+              margin-top: .2rem;
+              float: left; }
+              .paysuccessbigbox .seller_list .list_contents .list_content li .seller_infos .seller_position img {
+                width: .23rem;
+                height: .3rem;
+                float: left;
+                margin-right: 0.1rem; }
+              .paysuccessbigbox .seller_list .list_contents .list_content li .seller_infos .seller_position span {
+                float: left;
+                font-size: 0.28rem;
+                color: #888; }
+              .paysuccessbigbox .seller_list .list_contents .list_content li .seller_infos .seller_position div {
+                font-size: .28rem;
+                color: #888888;
+                height: .32rem;
+                line-height: .32rem;
+                overflow: hidden;
+                float: left; }
+            .paysuccessbigbox .seller_list .list_contents .list_content li .seller_infos .start {
+              width: 3rem;
+              float: left;
+              margin-top: 0.6rem;
+              height: 0.6rem; }
+              .paysuccessbigbox .seller_list .list_contents .list_content li .seller_infos .start .rating {
+                color: #a9a9a9;
+                margin: 0;
+                padding: 0; }
+              .paysuccessbigbox .seller_list .list_contents .list_content li .seller_infos .start ul.rating {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+                float: left; }
+              .paysuccessbigbox .seller_list .list_contents .list_content li .seller_infos .start .rating li {
+                display: inline-block;
+                padding: 1px;
+                text-align: center;
+                font-weight: bold;
+                cursor: pointer;
+                font-size: 0.4rem;
+                width: 0.4rem; }
+              .paysuccessbigbox .seller_list .list_contents .list_content li .seller_infos .start .rating .filled {
+                color: #ffba15; }
+            .paysuccessbigbox .seller_list .list_contents .list_content li .seller_infos .pay_btn {
+              width: 1.5rem;
+              height: .6rem;
+              border: #1C82D4 .01rem solid;
+              text-align: center;
+              line-height: .6rem;
+              margin-left: .5rem;
+              margin-top: 0.2rem;
+              -webkit-border-radius: .08rem;
+              -moz-border-radius: .08rem;
+              border-radius: .08rem;
+              float: left; }
+
+/*# sourceMappingURL=success.css.map */

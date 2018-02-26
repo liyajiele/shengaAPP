@@ -1,0 +1,21 @@
+<div class="registerone">
+    <img src="images/login/header_01.jpg"/>
+    <div class="register_main">
+        <div class="register_input_group" style="font-weight:bold;">信息填写</div>
+        <div class="username_group register_input_group ">
+           <span>手机号</span>
+           <input class="register_username_input" type="text" ng-model="mobile" placeholder="请输入手机号" />
+        </div>
+        <div class="code_group register_input_group ">
+           <span>验证码</span>
+           <input type="text" style="width: 2.6rem;" ng-model="code" placeholder="请输入4位验证码" />
+            <h4 ng-click="facode()">发送验证码</h4>
+        </div>
+        <div class="password_group register_input_group ">
+            <span style="margin-right:0.75rem">密码</span>
+            <input type="password" ng-model="password" placeholder="可设置6-16位密码" />
+        </div>
+        
+        <div class="register_btn" tapmode="" ng-click="register()">立即注册</div>
+    </div>
+</div>

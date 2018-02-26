@@ -1,0 +1,121 @@
+.IDcardzhangxin {
+  width: 7.5rem;
+  height: 100%;
+  margin: 0 auto;
+  background: #FFFFFF;
+  position: relative; }
+  .IDcardzhangxin .idmain {
+    position: absolute;
+    top: 0;
+    height: 100%; }
+    .IDcardzhangxin .idmain p {
+      font-size: 0.3rem;
+      color: #D41C1C;
+      margin-top: 0.4rem; }
+      .IDcardzhangxin .idmain p span {
+        font-weight: bold;
+        color: #000000;
+        font-size: 0.3rem;
+        margin-left: 0.4rem; }
+    .IDcardzhangxin .idmain h1 {
+      margin-top: 0.4rem;
+      margin-left: 0.4rem;
+      font-size: 0.26rem; }
+    .IDcardzhangxin .idmain #preview {
+      background: #d4d4d4;
+      margin-top: 0.2rem;
+      position: relative;
+      margin-left: 0.4rem;
+      width: 4rem;
+      height: 2.4rem; }
+      .IDcardzhangxin .idmain #preview .add {
+        position: absolute;
+        top: 0.5rem;
+        background: #d4d4d4;
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 1rem;
+        color: #fff;
+        text-align: center;
+        border: 0.02rem dashed #fff;
+        left: 1.2rem; }
+      .IDcardzhangxin .idmain #preview .adda {
+        position: absolute;
+        top: 0.5rem;
+        background: #d4d4d4;
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 1rem;
+        color: #fff;
+        text-align: center;
+        border: 0.02rem dashed #fff;
+        left: 1.2rem; }
+      .IDcardzhangxin .idmain #preview img {
+        width: 4rem;
+        height: 2.4rem;
+        float: left;
+        text-align: left;
+        position: absolute; }
+      .IDcardzhangxin .idmain #preview input {
+        position: absolute;
+        top: 1rem;
+        height: 1rem;
+        width: 1rem;
+        display: block;
+        left: 1.5rem;
+        z-index: 111;
+        opacity: 0; }
+      .IDcardzhangxin .idmain #preview h2 {
+        color: #4F9ADC;
+        font-size: 0.3rem;
+        position: absolute;
+        bottom: 0;
+        right: -2rem; }
+    .IDcardzhangxin .idmain #previewzx {
+      height: 2.4rem; }
+      .IDcardzhangxin .idmain #previewzx img {
+        width: 4rem;
+        height: 2.5rem;
+        float: left;
+        text-align: left;
+        margin-top: 0.24rem; }
+    .IDcardzhangxin .idmain button {
+      width: 6.8rem;
+      height: 1rem;
+      line-height: 1rem;
+      text-align: center;
+      color: #FFFFFF;
+      background: #1C82D4;
+      border-radius: 4px;
+      position: fixed;
+      margin-left: 0.35rem;
+      font-size: 0.34rem;
+      bottom: 0; }
+  .IDcardzhangxin .lia {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background: rgba(127, 127, 127, 0.5);
+    display: none; }
+    .IDcardzhangxin .lia img {
+      width: 4.62rem;
+      height: 2.91rem;
+      margin: 0 auto;
+      margin-top: 5rem;
+      margin-left: 1.5rem; }
+  .IDcardzhangxin .lib {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background: rgba(127, 127, 127, 0.5);
+    display: none; }
+    .IDcardzhangxin .lib img {
+      width: 4.62rem;
+      height: 2.91rem;
+      margin: 0 auto;
+      margin-top: 5rem;
+      margin-left: 1.5rem; }
+
+/*# sourceMappingURL=IDcard.css.map */

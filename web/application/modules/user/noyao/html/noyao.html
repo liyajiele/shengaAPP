@@ -1,0 +1,94 @@
+<div class="nobox">
+	<div class="noyaobigbox">
+    <div class="packfloat">
+        <div class="laba"><img src="images/pack/laba.png" alt=""></div>
+        <div class="toplan">
+            <!--<ul class="landong">
+                <li ng-repeat="pack in new"><span ng-bind="pack.content"></span></li>
+            </ul>-->
+             <div lunbo ></div>
+    		<!--<script type="text/ng-template" id="lunbo.html">-->
+            <ul class="landong">
+	            <li ng-repeat="pack in new" class="fade-in style hidden" >
+	            	<span ng-bind="pack.content"></span>
+	                <!--<a href="{{img.href}}"><img src="{{img.src}}" alt=""/></a>-->
+	            </li>
+	        </ul>
+	       <!--</script>-->
+        </div>
+        <div class="hotpack"><img src="images/pack/hotpack.png" alt=""></div>
+    </div>
+
+    <div class="ruler">
+        <div class="title">
+        	<div class="rulerleft">
+        		<img src="images/pack/bao.jpg" alt="" />
+        		<p>今天您还能抢<span ng-bind="money.canGetRebNum">3</span>次</p>
+        	</div>
+        	<div class="rulerright" ng-click="toUrl('/user/redruler')">
+        		<i><img src="images/pack/red.jpg" alt=""></i>       		
+        		<span>查看参与规则</span> 
+        	</div>
+        </div>
+       <p class="redgang">
+	       	<i></i>
+	       	<span>每人每天可抢3次红包，活动解释权归省啊所有</span>
+	       	<i></i>
+       </p>
+    </div>
+
+    <div class="packmess" infinite-scroll='myrecord.myrecord(uid,start,end)' infinite-scroll-disabled='myrecord.myrecordBusy' infinite-scroll-distance='1'>
+        <ul class="packmesslist">
+            <li ng-repeat="myrecord in myrecord.myrecordArray|filter:{recordType:'3'}">
+            	<span class="time" ng-bind="myrecord.createTime|date:'HH:mm'"></span><span class="qiang">我抢到一个大红包</span> <i><img src="images/pack/packsmall.png" alt=""></i>
+            </li>
+        </ul>
+    </div>
+
+	<div class="packbig">
+        <div class="packbei"></div>
+        <p class="qian"><span ng-bind="redmoneya.toFixed(2)">2.15</span>元</p>
+        <p class="dianji" ng-click="ling()">点击领取</p>
+    </div>
+    
+    <div class="packno">
+    	<div class="packbeino"></div>
+        <p class="dianji" ng-click="qu()">点击领取</p>
+    </div>
+
+    
+    <div class="tou"></div>
+</div>
+</div>
+
+
+<script>
+  //大轮播   自动轮播
+var imgbox=$(".landong")[0];
+var imgss=$("li",imgbox);
+var width=parseInt(getStyle(imgss[0],"width"));
+//console.log(width)
+var t=setInterval(move,2000);
+var flag=true;
+
+function move(){
+    animate(imgbox,{left:-width},1000,function(){   //自动走，盒子向左移
+      var first=getFirst(imgbox);   //获取盒子的第一个元素
+//      console.log(first)
+      imgbox.appendChild(first);    //追加，插入到最后
+      imgbox.style.left=0;       //把盒子拉回来
+      flag=true;
+    })
+}
+imgbox.onmouseover=function(){
+    clearInterval(t);
+}
+imgbox.onmouseout=function(){
+    t=setInterval(move,2000)
+}
+
+
+
+ 
+  
+</script>

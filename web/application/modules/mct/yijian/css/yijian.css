@@ -1,0 +1,121 @@
+.yijianbigbox {
+  background: #f0f0f0;
+  width: 7.5rem;
+  height: 100%;
+  font-size: 0.32rem; }
+  .yijianbigbox p {
+    width: 7.1rem;
+    height: 0.82rem;
+    line-height: 0.82rem;
+    margin-left: 0.4rem;
+    font-size: 0.28rem;
+    color: #888; }
+  .yijianbigbox .quest {
+    height: 2.4rem;
+    width: 100%;
+    background: #fff; }
+    .yijianbigbox .quest li {
+      height: 0.8rem;
+      line-height: 0.8rem;
+      padding-left: 0.4rem;
+      border-bottom: 0.01rem solid #f0f0f0; }
+      .yijianbigbox .quest li i {
+        width: 0.45rem;
+        height: 0.45rem;
+        float: right;
+        margin-right: 0.4rem;
+        margin-top: 0.15rem; }
+        .yijianbigbox .quest li i img {
+          display: block;
+          width: 100%; }
+  .yijianbigbox .yijian {
+    height: 6.2rem;
+    width: 100%; }
+    .yijianbigbox .yijian .yitop {
+      background: #fff;
+      height: 2.6rem;
+      width: 100%;
+      position: relative; }
+      .yijianbigbox .yijian .yitop textarea {
+        position: absolute;
+        width: 6.7rem;
+        border: none;
+        margin: 0 auto;
+        color: #888;
+        height: 1.85rem;
+        top: 0.25rem;
+        left: 0.4rem;
+        line-height: 0.5rem;
+        font-size: 0.26rem;
+        resize: none; }
+      .yijianbigbox .yijian .yitop textarea:focus {
+        outline: none; }
+      .yijianbigbox .yijian .yitop p {
+        position: absolute;
+        right: 0.4rem;
+        bottom: 0.1rem;
+        color: #888;
+        text-align: right; }
+    .yijianbigbox .yijian .yiimg {
+      height: auto;
+      width: 6.7rem;
+      margin: 0 auto;
+      margin-left: 0.4rem; }
+      .yijianbigbox .yijian .yiimg .disnn {
+        display: none; }
+      .yijianbigbox .yijian .yiimg .yiimglist {
+        width: 1.6rem;
+        height: 1.6rem;
+        float: left;
+        margin-right: 0.1rem;
+        background: RGBA(0, 0, 0, 0.1);
+        margin-top: 0.2rem;
+        position: relative;
+        display: block;
+        overflow: hidden; }
+        .yijianbigbox .yijian .yiimg .yiimglist img {
+          width: 100%; }
+        .yijianbigbox .yijian .yiimg .yiimglist .del {
+          width: 0.42rem;
+          height: 0.42rem;
+          background: #888;
+          display: block;
+          border-radius: 50%;
+          text-align: center;
+          line-height: 0.42rem;
+          color: #fff;
+          font-size: 0.4rem;
+          position: absolute;
+          top: -0.1rem;
+          right: -0.1rem; }
+        .yijianbigbox .yijian .yiimg .yiimglist .add {
+          width: 0.74rem;
+          height: 0.74rem;
+          position: absolute;
+          top: 0.45rem;
+          left: 0.45rem;
+          color: #FFFFFF;
+          font-size: 1rem;
+          line-height: 0.74rem;
+          text-align: center; }
+        .yijianbigbox .yijian .yiimg .yiimglist .file {
+          position: absolute;
+          left: 0;
+          top: 0.7rem;
+          opacity: 0;
+          width: 100%; }
+      .yijianbigbox .yijian .yiimg li:nth-child(4) {
+        margin-right: 0; }
+  .yijianbigbox .btn {
+    width: 6.8rem;
+    height: 1rem;
+    background: #1C82D4;
+    color: #FFFFFF;
+    font-size: 0.34rem;
+    line-height: 1rem;
+    text-align: center;
+    margin-top: 0.4rem;
+    margin-left: 0.35rem;
+    border-radius: 0.1rem; }
+
+/*# sourceMappingURL=yijian.css.map */

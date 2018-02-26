@@ -1,0 +1,25 @@
+.rulerbigbox {
+  background: #fff;
+  width: 7.5rem;
+  height: 100%;
+  font-size: 0.26rem;
+  color: #353535; }
+  .rulerbigbox h1 {
+    font-size: 0.35rem;
+    margin-top: 0.35rem;
+    margin-left: 0.4rem;
+    margin-bottom: 0.5rem; }
+  .rulerbigbox p {
+    width: 6.7rem;
+    margin-left: 0.4rem;
+    line-height: 0.35rem;
+    letter-spacing: 0.02rem;
+    margin-bottom: 0.4rem; }
+  .rulerbigbox .xiao {
+    width: 6.7rem;
+    margin-left: 0.4rem;
+    font-size: 0.23rem;
+    color: #888888;
+    line-height: 0.35rem; }
+
+/*# sourceMappingURL=ruler.css.map */

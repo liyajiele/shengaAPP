@@ -1,0 +1,41 @@
+<div class="financebigbox">
+    <ul class="fintop">
+        <li>时间</li>
+        <li>金额</li>
+        <li ng-click="toggle()" ng-class="{active:type==true}">全部类型<i><img src="images/money/time.png" alt=""></i></li>
+    </ul>
+    <div class="finbot">
+        <div class="time" ng-class="{zindex:typea==true}" ng-show="typea">
+            <div class="timetop">
+
+            </div>
+            <div class="timebot">完成</div>
+        </div>
+
+        <div class="money" infinite-scroll='myrecord.myrecord(mid,typeindex)' infinite-scroll-disabled='myrecord.myrecordBusy' infinite-scroll-distance='1'>
+           <ul ng-repeat="myrecordlist in myrecord.myrecordArray">
+                <li ng-bind="myrecordlist.createTime|date:'yyyy-MM-dd HH:mm'"></li>
+                <li class="add" ng-style="setcolor(myrecordlist.recordType)">
+                	<span ng-bind="myrecordlist.recordType|fu"></span>
+                	<span ng-bind="myrecordlist.amount.toFixed(2)"></span>
+                </li>
+                <li ng-bind="myrecordlist.recordType|typeFilter" class="type"></li>
+            </ul> 
+        </div>
+
+
+
+
+        <ul class="alltype" ng-show="type">
+            <li ng-click="goul($index)" ng-class="{bian:$index ==chosedIndex}" ng-repeat="x in records">{{x.Name}}
+                <i ng-show="isShow==$index"><img src="images/money/gou.png" alt=""></i>
+            </li>
+        </ul>
+
+		<div class="bei">
+	        <img src="images/money/no.png" alt="">
+	        <p>暂无订单</p>
+	    </div>
+
+    </div>
+</div>

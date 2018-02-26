@@ -1,0 +1,102 @@
+.licencezhangxin {
+  width: 7.5rem;
+  height: 100%;
+  background: #FFFFFF;
+  margin: 0 auto;
+  position: relative; }
+  .licencezhangxin .licencemain {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0; }
+    .licencezhangxin .licencemain p {
+      font-size: 0.3rem;
+      margin: 0 auto;
+      color: #D41C1C;
+      margin-top: 0.4rem;
+      width: 6.58rem; }
+      .licencezhangxin .licencemain p span {
+        font-weight: bold;
+        color: #000000;
+        font-size: 0.3rem; }
+    .licencezhangxin .licencemain h1 {
+      font-size: 0.3rem;
+      margin-top: 0.42rem;
+      margin-left: 0.41rem; }
+    .licencezhangxin .licencemain #preview {
+      background: #d4d4d4;
+      margin-top: 0.2rem;
+      position: relative;
+      margin-left: 0.4rem;
+      width: 4rem;
+      height: 2.4rem; }
+      .licencezhangxin .licencemain #preview .add {
+        position: absolute;
+        top: 0.5rem;
+        background: #d4d4d4;
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 1rem;
+        color: #fff;
+        text-align: center;
+        border: 0.02rem dashed #fff;
+        left: 1.2rem; }
+      .licencezhangxin .licencemain #preview .adda {
+        position: absolute;
+        top: 0.5rem;
+        background: #d4d4d4;
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 1rem;
+        color: #fff;
+        text-align: center;
+        border: 0.02rem dashed #fff;
+        left: 1.2rem; }
+      .licencezhangxin .licencemain #preview img {
+        width: 4rem;
+        height: 2.4rem;
+        float: left;
+        text-align: left;
+        position: absolute; }
+      .licencezhangxin .licencemain #preview input {
+        position: absolute;
+        top: 1rem;
+        height: 1rem;
+        width: 1rem;
+        display: block;
+        left: 1.5rem;
+        z-index: 111;
+        opacity: 0; }
+      .licencezhangxin .licencemain #preview h2 {
+        color: #4F9ADC;
+        font-size: 0.3rem;
+        position: absolute;
+        bottom: 0;
+        right: -2rem; }
+    .licencezhangxin .licencemain button {
+      width: 6.8rem;
+      height: 1rem;
+      line-height: 1rem;
+      text-align: center;
+      color: #FFFFFF;
+      background: #1C82D4;
+      border-radius: 4px;
+      position: fixed;
+      margin-left: 0.4rem;
+      font-size: 0.36rem;
+      bottom: 0; }
+  .licencezhangxin .li {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background: rgba(127, 127, 127, 0.5);
+    display: none; }
+    .licencezhangxin .li img {
+      width: 4.88rem;
+      height: 3.6rem;
+      margin: 0 auto;
+      margin-top: 5rem;
+      margin-left: 1.5rem; }
+
+/*# sourceMappingURL=licence.css.map */

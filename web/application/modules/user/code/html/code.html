@@ -1,0 +1,25 @@
+<div class="codebigbox" infinite-scroll='commonslist.commonslist(mid)' infinite-scroll-disabled='commonslist.commonslistBusy' infinite-scroll-distance='1'>
+    <div class="code_header">
+        <div class="codeimg" ng-click="back()"><img src="images/code/leftArrows.png" alt=""></div>
+        <div class="dafen"><span>网友打分</div>
+    </div>
+    <div class="code_listbox">
+        <div class="code_list" ng-repeat="commonslist in commonslist.commonslistArray">
+            <div class="codephoto"><img ng-src="{{commonslist.avatar}}" alt=""></div>
+            <div class="codemessage">
+                <div class="codemesstop">
+                    <p class="codemt" ng-bind="commonslist.nickname"></p>
+                    <p class="codemtr" ng-bind="dt"></p>
+                </div>
+                <div class="codecode">
+                    <span>打分</span>
+                    <div star rating-value="commonslist.stars" max="max" on-hover="onHover" on-leave="onLeave" readonly="{{readonly}}" class="start"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bei">
+    	暂时没有用户为商家打分哦~
+    </div>
+</div>
+

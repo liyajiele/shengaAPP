@@ -1,0 +1,48 @@
+<div class="contactsbigbox">
+    <ul class="contop">
+        <li ng-click="active(1)" ng-class="{'active1':xuan==true}">直接邀请(<span ng-bind="childnum.child1"></span>)</li>
+        <li ng-click="active(2)" ng-class="{'active1':xuan==false}">间接邀请(<span ng-bind="childnum.child2"></span>)</li>
+    </ul>
+    <div class="conbottom">
+        <div class="conzhi" ng-show="xuan==true" infinite-scroll='child.child(1)' infinite-scroll-disabled='child.childBusy' infinite-scroll-distance='1'>
+            <div class="zhilist" ng-repeat="zi in child.childArray">
+                <div class="zhiimg">
+                    <img ng-src="{{zi.avatar}}" alt="">
+                </div>
+                <div class="zhimess">
+                    <p><i ng-bind="zi.nickname"></i> <span ng-bind="zi.createTime|date:'yyyy-MM-dd'"></span></p>
+                    <div class="message">
+                    	<div class="mess">
+                    		<span>ID:</span><i ng-bind="zi.id"></i>
+                    	</div>
+                    	<div class="mess messa">
+                    		<i ng-bind="zi.username"></i>
+                    		<span>邀请人：</span>
+                    	</div>
+                    	
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="conzhi" ng-show="xuan==false" infinite-scroll='child.child(2)' infinite-scroll-disabled='child.childBusy' infinite-scroll-distance='1'>
+            <div class="zhilist" ng-repeat="zi in child.childArray">
+                <div class="zhiimg">
+                    <img ng-src="{{zi.avatar}}" alt="">
+                </div>
+                <div class="zhimess">
+                    <p><i ng-bind="zi.nickname"></i> <span ng-bind="zi.createTime|date:'yyyy-MM-dd'"></span></p>
+                    <div class="message">
+                    	<div class="mess">
+                    		<span>ID:</span><i ng-bind="zi.id"></i>
+                    	</div>
+                    	<div class="mess messa">
+                    		<i ng-bind="zi.username"></i>
+                    		<span>邀请人：</span>
+                    	</div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>

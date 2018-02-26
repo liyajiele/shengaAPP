@@ -1,0 +1,268 @@
+
+.paybigbox{
+  height:100%;
+  width:7.5rem;
+  background: #f0f0f0;
+  font-size:0.26rem;
+  position: relative;
+  color:#353535 ;
+  
+  .paytop{
+    height: 4rem;
+    width: 100%;
+    background: #fff;
+    position: absolute;
+    top: 0;
+
+    .paytoptop{
+      height: 2.3rem;
+      width: 100%;
+      margin-bottom: 0.3rem;
+
+      .payimg{
+        width: 2.5rem;
+        height: 1.9rem;
+        overflow: hidden;
+        margin-top: 0.4rem;
+        margin-left: 0.4rem;
+        float: left;
+        img{
+          height:100%;
+        }
+      }
+      p{
+//      width: 4.4rem;
+        float: left;
+        margin-left: 0.2rem;
+        margin-top: 0.4rem;
+        font-size: 0.36rem;
+        font-weight: 700;
+      }
+    }
+    .paypay{
+      width: 6.78rem;
+      height: 1.08rem;
+      border: 0.015rem solid #949494;
+      margin: 0 auto;
+      margin-left: 0.4rem;
+      border-radius: 0.05rem;
+      position: relative;
+      font-size: 20px;
+      
+
+      i{
+        position: absolute;
+        width: 0.5rem;
+        height: 0.5rem;
+        top: 0.25rem;
+        left: 0.25rem;
+        img{
+          width:100%;
+        }
+      }
+      input{
+        border: none;
+        font-size: 0.32rem;
+        height: 1.08rem;
+        min-height: 1.08rem;
+        position: absolute;
+        top:0;
+        left: 1rem;
+        outline: none;
+        background: none;
+        outline: none;
+        padding: 0;
+      }
+    }
+  }
+
+  .yupay{
+    width: 100%;
+    height: auto;
+    background: #fff;
+    position: absolute;
+      top: 4.3rem;
+
+    .yupaytop{
+      width: 100%;
+      height: 1rem;
+      border-bottom: 0.05rem solid #eeeeee;
+
+      p{
+        font-size: 0.3rem;
+        font-weight: 700;
+        width: 6.8rem;
+        margin: 0 auto;
+        padding-top: 0.1rem;
+        padding-left: 0;
+
+        input{
+          float: right;
+          width: 0.4rem;
+          margin-top: 0.3rem;
+        }
+      }
+      .payzhi{
+        margin-left: 0.35rem;
+        margin-top: 0.05rem;
+        span{
+          color: red;
+        }
+      }
+    }
+    .nopay{
+      height: 1rem;
+      width: 100%;
+      p{
+        font-size: 0.3rem;
+        font-weight: 500;
+        margin-left: 0.35rem;
+        line-height: 1rem;
+        float: left;
+        padding-left: 0;
+      }
+      .nopayjia{
+        width: 0.5rem;
+        height: 0.5rem;
+        background: #1c82d4;
+        border-radius: 50%;
+        color: #fff;
+        text-align: center;
+        line-height: 0.5rem;
+        font-size: 0.5rem;
+        margin-right: 0.3rem;
+        float: right;
+        margin-top: 0.25rem;
+        
+        
+        img{
+            width: 100%;
+        }
+      }
+    }
+  }
+
+  .paytrue{
+    height: 1rem;
+    width: 100%;
+    position: fixed;
+    bottom: 0rem;
+    background: #FFFFFF;
+    .fan{
+      background: #fff;
+      height: 100%;
+      line-height: 1rem;
+      font-size: 0.3rem;
+      padding-left: 0.25rem;
+      float: left;
+    }
+    .dazhe{
+        height: 1rem;
+        width: 2rem;
+        line-height: 1rem;
+        float: left;
+        margin-left: 0.2rem;
+        font-size: 0.34rem;
+        display: none;
+        
+        span{
+            color:red;
+            font-size: 0.28rem;
+        }
+    }
+    .true{
+      width: 2.2rem;
+      height: 1rem;
+      line-height: 1rem;
+      text-align: center;
+      color: #fff;
+      background: #888;
+      float: right;
+    }
+  }
+  
+  .zhe{
+      width: 6.78rem;
+    height: 0.9rem;
+    border: 0.015rem solid #CCCCCC;
+    margin: 0 auto;
+    margin-left: 0.4rem;
+    border-radius: 0.05rem;
+    position: absolute;
+    position: absolute;
+    top: 6.6rem;
+//  opacity: 0;
+
+      i{
+        position: absolute;
+        width: 0.4rem;
+        height: 0.5rem;
+        top: 0.25rem;
+        left: 0.25rem;
+        img{
+          width:100%;
+        }
+      }
+      input{
+        border: none;
+        font-size: 0.28rem;
+        height: 0.9rem;
+        min-height: 0.9rem;
+        padding-left: 1rem;
+        background: transparent;
+        outline: none;
+        color: #888888;
+      }
+    }
+    
+
+    .jianpan{
+        position: fixed;
+        bottom: 1rem;
+        height: 4.52rem;
+        width: 7.5rem;
+        display: none;
+        
+        .jianleft{
+            width: 5.63rem;
+            float: left;
+            background: #fff;
+            height: 100%;
+            
+            li{
+                width: 1.83rem;
+                height: 1.09rem;
+                float: left;
+                text-align: center;
+                line-height: 1.11rem;
+                border: 0.01rem solid #F0F0F0;
+                font-size: 0.58rem;
+            }
+        }
+        .jianright{
+            width: 1.87rem;
+            float: right;
+            
+            .tui{
+                width: 100%;
+                height: 50%;
+                
+                img{
+                    width: 100%;
+                }
+            }
+            .success{
+                width: 100%;
+                height: 50%;
+                text-align: center;
+                font-size: 0.5rem;
+                line-height: 2.11rem;
+            }
+        }
+    }
+    
+    
+    
+    
+  
+}

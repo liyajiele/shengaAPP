@@ -1,0 +1,102 @@
+.completedbigbox {
+  width: 7.5rem;
+  height: 100%;
+  background: #f0f0f0;
+  overflow: scroll;
+  font-size: 0.26rem;
+  color: #353535; }
+  .completedbigbox .list_content {
+    width: 100%;
+    height: 100%; }
+    .completedbigbox .list_content li {
+      float: left;
+      background: #fff;
+      width: 100%;
+      heigth: 2.58rem;
+      margin-bottom: 0.1rem; }
+      .completedbigbox .list_content li .seller_avatar {
+        width: 2rem;
+        height: 2rem;
+        margin-top: .2rem;
+        margin-bottom: 0.2rem;
+        float: left; }
+      .completedbigbox .list_content li .seller_infos {
+        width: 5.25rem;
+        height: 2rem;
+        margin-left: .25rem;
+        margin-top: .2rem;
+        margin-bottom: 0.2rem;
+        float: left; }
+        .completedbigbox .list_content li .seller_infos .seller_name {
+          color: #353535;
+          font-size: .34rem;
+          width: 3.5rem;
+          line-height: .34rem;
+          overflow: hidden;
+          float: left; }
+        .completedbigbox .list_content li .seller_infos .seller_distence {
+          width: 1.75rem;
+          font-size: .28rem;
+          color: #888888;
+          float: left; }
+        .completedbigbox .list_content li .seller_infos .seller_position {
+          color: #a9a9a9;
+          width: 100%;
+          height: .32rem;
+          margin-top: .2rem;
+          float: left;
+          line-height: 0.32rem; }
+          .completedbigbox .list_content li .seller_infos .seller_position img {
+            width: .23rem;
+            height: .3rem;
+            float: left;
+            margin-right: 0.1rem; }
+          .completedbigbox .list_content li .seller_infos .seller_position span {
+            float: left;
+            font-size: 0.28rem; }
+          .completedbigbox .list_content li .seller_infos .seller_position div {
+            font-size: .28rem;
+            color: #888888;
+            height: .32rem;
+            line-height: .32rem;
+            overflow: hidden;
+            float: left; }
+        .completedbigbox .list_content li .seller_infos .time {
+          margin-top: 0.3rem;
+          float: left;
+          width: 100%;
+          color: #888;
+          float: left; }
+        .completedbigbox .list_content li .seller_infos .money {
+          margin-top: 0.2rem;
+          float: left;
+          width: 50%;
+          color: #888;
+          float: left; }
+          .completedbigbox .list_content li .seller_infos .money span {
+            color: red; }
+        .completedbigbox .list_content li .seller_infos .fanmoney {
+          margin-top: 0.2rem;
+          float: left;
+          width: 50%;
+          color: #888;
+          float: left; }
+          .completedbigbox .list_content li .seller_infos .fanmoney span {
+            color: #22c01a; }
+  .completedbigbox .bei {
+    height: 2.5rem;
+    position: fixed;
+    top: 3.48rem;
+    left: 2.94rem;
+    display: none; }
+    .completedbigbox .bei img {
+      width: 1.62rem;
+      height: 1.92rem;
+      margin: 0 auto; }
+    .completedbigbox .bei p {
+      text-align: center;
+      font-size: 0.26rem;
+      color: #888;
+      margin-top: 0.1rem; }
+
+/*# sourceMappingURL=completedOrders.css.map */

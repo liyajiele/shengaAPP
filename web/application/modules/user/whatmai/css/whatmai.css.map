@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,OAAO;EACH,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,MAAM;EAEb,WAAG;IACC,KAAK,EAAE,IAAI;IACX,MAAM,EAAE,IAAI;IACZ,OAAO,EAAE,CAAC;IACV,MAAM,EAAE,CAAC;IACT,OAAO,EAAE,KAAK",
+"sources": ["whatmai.scss"],
+"names": [],
+"file": "whatmai.css"
+}

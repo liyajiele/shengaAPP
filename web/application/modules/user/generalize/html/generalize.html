@@ -1,0 +1,22 @@
+ <div class="generalizebigbox">
+    <div class="box" id="ttt">
+        <div class="boximg">
+        	<img ng-src="{{aboutInfo.avatar}}" id="aa"/>
+        </div>
+        <!--<div class="boximg">
+        	<img ng-src="aboutInfo.avatar" id="aa"/>
+        </div>-->
+        <p class="boxp">我是：<span ng-bind="aboutInfo.nickname"></span></p>
+        <p class="boxpp">我为省啊代言</p>
+        <div class="ma" id="qrcode" qr></div>
+        <p class="boxppp">微信扫一扫加入省啊</p>
+        <p class="boxpppp">长按或扫描上图二维码加入省啊，注册会员即可天天抢红包，更多精彩等你来抢～</p>
+        <div class="circleleft"></div>
+        <div class="circleright"></div>
+        <p class="yao">邀请码：<span ng-bind="codema"></span></p>
+    </div>
+    <!--<button style="outline: none;border: none;" class="bao" ng-click="takeScreenshot()">点击保存图片</button>-->
+    <button style="outline: none;border: none;" class="bao">点击保存图片</button>
+</div>
+<!--<script src="https://cdn.bootcss.com/html2canvas/0.5.0-beta4/html2canvas.js"></script>-->
+

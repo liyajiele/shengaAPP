@@ -1,0 +1,33 @@
+.spreadbigbox {
+  width: 7.5rem;
+  height: auto; }
+  .spreadbigbox > img {
+    width: 100%; }
+  .spreadbigbox > div {
+    width: 100%;
+    text-align: center; }
+    .spreadbigbox > div h1 {
+      font-size: 0.5rem;
+      font-weight: bold;
+      color: #2987D5;
+      margin-top: 0.6rem; }
+    .spreadbigbox > div h2 {
+      font-size: 0.26rem;
+      margin-top: 0.1rem; }
+  .spreadbigbox .center {
+    overflow: hidden;
+    width: 6.5rem;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 0.53rem; }
+    .spreadbigbox .center h2 {
+      font-size: 0.26rem;
+      text-align: left; }
+    .spreadbigbox .center input {
+      width: 6.45rem;
+      height: 0.75rem;
+      border: 1px solid #ccc;
+      position: relative;
+      top: -0.2rem; }
+
+/*# sourceMappingURL=spreadthree.css.map */

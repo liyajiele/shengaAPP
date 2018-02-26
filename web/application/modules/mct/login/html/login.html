@@ -1,0 +1,14 @@
+<div class="login_main">
+    <div class="login_tp">
+        <img src="images/login/login.png" alt="" />
+    </div>
+    <div class="login_main">
+        <p> 手机号　<input type="text" ng-model="mobile" placeholder="请输入手机号"/></p>
+        <p>密码　<input type="password" ng-model="password" placeholder="请输入密码"/ style="margin-left: 0.3rem;"></p>
+        <h2 class="right" ng-click="toUrl('mct/loginma')">忘记密码?</h2>
+    </div>
+    <div class="login_btn center " tapmode=""  ng-click="login()">
+        登录
+    </div>
+    <h2 class="right" style="font-size: 0.26rem;color: #1C82D4;margin-right: 0.4rem;margin-top: 0.3rem;" ng-click="toUrl('mct/register')">新商户入驻</h2>
+</div>

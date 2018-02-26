@@ -1,0 +1,69 @@
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<div class="financebigbox">
+    <ul class="fintop">
+        <li ng-class="{active:typea==true}">时间</li>
+        <li>金额</li>
+        <li ng-click="toggle()" ng-class="{active:type==true}">全部类型<i><img src="images/money/time.png" alt=""></i></li>
+    </ul>
+    <!--<div class="finbot">-->
+        <!--<div class="time" ng-class="{zindex:typea==true}" ng-show="typea">
+            <div class="timetop">
+            	<input value="" id="input1" type="text">
+            </div>
+            <div class="timebot">完成</div>
+        </div>-->
+
+        <div class="money" infinite-scroll='myrecord.myrecord(3)' infinite-scroll-disabled='myrecord.myrecordBusy' infinite-scroll-distance='1'>
+            <ul ng-repeat="myrecordlist in myrecord.myrecordArray">
+                <li ng-bind="myrecordlist.createTime|date:'yyyy-MM-dd HH:mm'"></li>
+                <li class="add" ng-style="setcolor(myrecordlist.recordType)">
+                	<span ng-bind="myrecordlist.recordType|fu"></span>
+                	<span ng-bind="myrecordlist.amount.toFixed(2)"></span>
+                </li>
+                <li ng-bind="myrecordlist.recordType|typeFilter" class="type"></li>
+            </ul> 
+        </div>
+
+       
+    <!--</div>-->
+    <ul class="alltype" ng-show="type">
+        <li ng-click="goul($index)" ng-class="{bian:$index ==chosedIndex}" ng-repeat="x in records">{{x.Name}}
+            <i ng-show="isShow==$index"><img src="images/money/gou.png" alt=""></i>
+        </li>
+    </ul>
+    <div class="bei">
+        <img src="images/money/no.png" alt="">
+        <p>暂无订单</p>
+    </div>
+</div>
+<script type="text/javascript">
+	
+//	$(function(){
+//		
+//		$("#input1").shijian()
+//	})
+//      $(function () {
+//			var currYear = (new Date()).getFullYear();	
+//			var opt={};
+//			opt.date = {preset : 'date'};
+//			opt.datetime = {preset : 'datetime'};
+//			opt.time = {preset : 'time'};
+//			opt.default = {
+//				theme: 'android-ics light', //皮肤样式
+//		        display: 'modal', //显示方式 
+//		        mode: 'scroller', //日期选择模式
+//				dateFormat: 'yyyy-mm-dd',
+//				lang: 'zh',
+//				showNow: true,
+//				nowText: "今天",
+//		        startYear: currYear - 10, //开始年份
+//		        endYear: currYear + 10 //结束年份
+//			};
+//
+//		  	$(".time").mobiscroll($.extend(opt['date'], opt['default']));
+//		  	var optDateTime = $.extend(opt['datetime'], opt['default']);
+//		  	var optTime = $.extend(opt['time'], opt['default']);
+////		    $("#appDateTime").mobiscroll(optDateTime).datetime(optDateTime);
+////		    $("#appTime").mobiscroll(optTime).time(optTime);
+//      });
+    </script>

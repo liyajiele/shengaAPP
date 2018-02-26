@@ -1,0 +1,34 @@
+.auditsuccesszhangxin {
+  height: 100%;
+  width: 7.5rem;
+  margin: 0 auto;
+  text-align: center;
+  background: #fff; }
+  .auditsuccesszhangxin img {
+    width: 3.43rem;
+    height: 3.64rem;
+    margin-top: 0.97rem; }
+  .auditsuccesszhangxin h1 {
+    font-size: 0.26rem;
+    margin: 0.2rem 0; }
+  .auditsuccesszhangxin button {
+    width: 6.8rem;
+    height: 1rem;
+    line-height: 1rem;
+    text-align: center;
+    color: #FFFFFF;
+    background: #1C82D4;
+    border-radius: 4px;
+    margin-top: 2.5rem;
+    font-size: 0.36rem; }
+  .auditsuccesszhangxin p {
+    font-size: 0.3rem;
+    color: #1C82D4;
+    text-align: right;
+    margin-top: 1.75rem; }
+  .auditsuccesszhangxin .img {
+    width: 0.32rem;
+    height: 0.32rem;
+    margin-right: 0.2rem; }
+
+/*# sourceMappingURL=auditsuccess.css.map */

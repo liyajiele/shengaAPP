@@ -1,0 +1,21 @@
+<div class="paytibigbox">
+    <p><i><img src="images/pay/la.png" alt=""></i>请确保您的支付宝账号已通过实名认证，否则无法成功</p>
+
+    <div class="tibox">
+        <p>提现至支付宝</p>
+        <div class="name">姓名 <input type="text" placeholder="请输入支付宝本人姓名" class="concatUser" ng-model="concatuser" required ng-required="true" ng-minlength="2" maxlength="5"></div>
+        <div class="name">账号 <input type="text" placeholder="请输入支付宝账号" class="aliPay" ng-model="alipay" required ng-required="true" maxlength="11" ></div>
+    </div>
+    <div class="ti">
+        <p>提现金额</p> 
+        <div class="yu">账户余额： <span ng-bind="timoney.toFixed(2)"></span>元</div>
+        <div class="inputbox">
+            <i><img src="images/pay/pay.png" alt=""></i>
+            <input type="text" ng-model="drawNum" class="allti">
+            <div  class="wenti">温馨提示：最低提现金额10元，提现一个工作日内到账<i ng-click="toUrl('/user/ruler')"><img src="images/pay/i.png" alt=""></i></div>
+        </div>
+    </div>
+    <div class="other">今日还可提现 <span ng-bind="canDrawNum">3</span>次</div>
+    <div class="allti" ng-click="allti()">全部提现</div>
+    <div class="shenti" ng-click="tixian()">申请提现</div>
+</div>

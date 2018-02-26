@@ -1,0 +1,48 @@
+
+<section class="content-header">
+    <h1>账户一览</h1>
+</section>
+<section class="content">
+
+    <div style="background: #FFFEFF;margin-bottom: 10px">
+        <div><label>开始时间:</label><input type="date" id="start"><label>结束时间:</label><input type="date" id="end"><button class="btn btn-xs btn-primary" ng-click="queryData()">查询</button></div>
+       <div class="echart" id="container" style="height: 280px;width: 100%;">
+
+       </div>
+    </div>
+
+
+    <div class="shenga-userInfo" >
+        <img class="img-circle" src="{{account.userInfo.avatar}}" height="100px" width="100px">
+        <div style="display: inline-block;vertical-align: middle;margin-left: 40px;">
+            <div><h3 style="padding-top: 0px;margin-top: 0px;">张凯</h3></div>
+            <div style="margin-bottom: 20px;color: #092032 "><span>职称:</span><span ng-bind="account.userInfo.roles"></span>     <span style="margin-left:10px;">手机:</span><span ng-bind="account.userInfo.mobile"></span></div>
+            <button class="btn shenga-userInfo-password" ng-click="modifyPsd()">修改密码</button>
+        </div>
+    </div>
+
+    <div class="row account">
+        <div class="col-sm-12 col-lg-4">
+            <div class="account-info accountyellow">
+                <div class="account-info-title">佣金总额</div>
+                <div class="accountNum" ng-bind="account.sumEarns">94000</div>
+            </div>
+
+          </div>
+            <div class="col-sm-12 col-lg-4">
+                <div class="account-info accountblue">
+                    <div class="account-info-title">已提取金额</div>
+                    <div class="accountNum"  ng-bind="account.sumDraws">94000</div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+                <div class="account-info accountred">
+                    <div class="account-info-title">可用余额</div>
+                    <div class="accountNum"  ng-bind="account.balance">94000</div>
+                </div>
+            </div>
+    </div>
+
+</section>
+
+

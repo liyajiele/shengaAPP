@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html ng-app="webapp">
+<head lang="en">
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0, width=device-width"/>
+    <meta name="format-detection" content="telephone=no" />
+    <title ng-bind="htitle">省啊</title>
+    <link rel="stylesheet" href="style/index.css"/>
+    <script type="text/javascript" src="libs/rem.js"></script>
+    
+</head>
+<body>
+<div id="container">
+    <div id="scroll_container">
+        <div class="header_cont" ui-view="header"></div>
+        <div class="main_cont gsapify-router" ui-view="main"></div>
+        <div class="footer_cont " ui-view="navBottom"></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="libs/jquery/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="libs/layer/mobile/layer.js"></script>
+
+<script type="text/javascript" src="libs/angular/angular.min.js"></script>
+
+<script type="text/javascript" src="libs/layer/ng-layer.js"></script>
+<script type="text/javascript" src="libs/layer/ng-layer.js"></script>
+<script type="text/javascript" src="libs/angular/angular-local-storage.min.js" ></script>
+<script type="text/javascript" src="libs/angular/angular-ui-router.min.js"></script>
+<script type="text/javascript" src="libs/angular/ocLazyLoad.min.js"></script>
+<script type="text/javascript" src="application/app.js"></script>
+<script type="text/javascript" src="http://api.map.baidu.com/getscript?v=2.0&ak=696e6574253d1eb36c1c4b705c504b20&services=&t=20171031174121"></script>
+<script>
+	var geolocation = new BMap.Geolocation();
+	var geoc = new BMap.Geocoder();
+    
+	geolocation.getCurrentPosition(function (pos) {
+        var lng = pos.point.lng;//当前经度
+        var lat = pos.point.lat;//当前纬度
+       // console.log(lng,lat)
+        var point = new BMap.Point(lng, lat);
+        geoc.getLocation(point, function (rs) {
+	        var addComp = rs.addressComponents;
+	        var add=addComp.province + ", " + addComp.city + ", " + addComp.district + ", " + addComp.street + ", " + addComp.streetNumber;
+	        console.log(add);
+	    });
+		if(typeof(Storage)!=="undefined"){
+		  localStorage.lng=lng;
+		  localStorage.lat=lat;
+		  console.log(localStorage.lng,localStorage.lat);
+		}
+		else
+		{
+		  document.getElementById("result").innerHTML="对不起，您的浏览器不支持 web 存储。";
+		}
+		//  	
+	})
+
+</script>
+
+</body>
+</html>

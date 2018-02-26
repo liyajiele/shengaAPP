@@ -1,0 +1,6 @@
+<div class="toubigbox"  infinite-scroll='new.new()' infinite-scroll-disabled='new.newBusy' infinite-scroll-distance='1'>
+    <div class="toulist" ng-repeat="new in new.newArray">
+        <div class="listleft hong" ng-bind="new.newsTypeDesc" ng-style="setcolor(new.newsType)"></div>
+        <div class="listmi" ng-bind="new.content"></div>
+    </div>
+</div>

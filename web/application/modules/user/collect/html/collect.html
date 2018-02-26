@@ -1,0 +1,24 @@
+<div class="collectbigbox" infinite-scroll='collects.collects(mid)' infinite-scroll-disabled='collects.collectsBusy' infinite-scroll-distance='1'>
+    <ul class="list_content">
+        <li ng-repeat="collects in collects.collectsArray" ng-click="xiang(collects.id)">
+            <img class="seller_avatar" ng-src="{{collects.mainImage}}" />
+            <div class="seller_infos">
+                <div class="seller_name" ng-bind="collects.nickname"></div>
+                <div class="seller_distence" ><span ng-bind="collects.distance/1000|limitTo:5"></span>km</div>
+                <div class="seller_position">
+                    <img src="images/index/position.png" />
+                    <span>[</span>
+                    <div ng-bind="collects.addr"></div>
+                    <span>]</span>
+                </div>
+
+            	<div star rating-value="collects.stars" max="max" on-hover="onHover" on-leave="onLeave" readonly="{{readonly}}" class="start"></div>
+                <div class="pay_btn" ng-click="display(collects.id)" ng-class="{'active':xuan==true}">
+                    <img src="images/collect/collectb.png" alt="" class="fff" ng-show="xuan==false">
+                    <img src="images/collect/collect.png" alt="" class="red" ng-show="xuan==true">
+                </div>
+            </div>
+
+        </li>
+    </ul>
+</div>

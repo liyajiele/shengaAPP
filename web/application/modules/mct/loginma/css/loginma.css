@@ -1,0 +1,60 @@
+.loginma {
+  height: 100%;
+  width: 7.5rem;
+  background: #FFFFFF; }
+  .loginma .login_tp {
+    width: 100%;
+    text-align: center;
+    padding-top: 1.42rem; }
+    .loginma .login_tp img {
+      width: 1.76rem;
+      height: 1.76rem;
+      display: inline-block;
+      /*margin-left: 38%;*/ }
+  .loginma .login_main {
+    width: 100%;
+    background: #fff;
+    height: auto;
+    padding-top: 1.42rem;
+    overflow: hidden;
+    font-size: 0.3rem; }
+    .loginma .login_main .register_input_group {
+      letter-spacing: 1px;
+      width: 100%;
+      height: 1rem;
+      background: #FFFFFF;
+      line-height: 1rem;
+      text-indent: 0.4rem;
+      font-size: 0.26rem;
+      border-bottom: 1px solid #DEDEDE; }
+      .loginma .login_main .register_input_group span {
+        font-size: 0.28rem;
+        color: #353535;
+        margin-right: 0.4rem; }
+      .loginma .login_main .register_input_group input {
+        outline: none;
+        resize: none;
+        font-size: 0.26rem;
+        color: #888; }
+      .loginma .login_main .register_input_group h4 {
+        color: #1C82D4;
+        float: right;
+        width: 2.2rem;
+        border-left: 0.015rem solid #1c82d4;
+        height: 0.5rem;
+        line-height: 0.5rem;
+        margin-top: 0.25rem; }
+
+.login_btn {
+  width: 6.82rem;
+  height: 0.98rem;
+  line-height: 0.98rem;
+  border-radius: 4px;
+  background: #1C82D4;
+  color: #FFFFFF;
+  text-align-last: center;
+  margin: 0 auto;
+  font-size: 0.34rem;
+  margin-top: 2.16rem; }
+
+/*# sourceMappingURL=loginma.css.map */

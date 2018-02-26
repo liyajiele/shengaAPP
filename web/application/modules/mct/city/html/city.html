@@ -1,0 +1,341 @@
+
+<div class="citybigbox">
+    <div class="citytop">
+        <div class="cityimg" ng-click="back()"><img src="images/code/leftArrows.png" alt="" ></div>
+        <div class="searchcity" >
+            <input type="text" placeholder="城市名">
+            <i><img src="images/index/search.png" alt=""></i>
+        </div>
+    </div>
+    <div class="dingwei">
+        <li class="hc1">&nbsp;
+            <adsf class="h1c ding" ng-model="citycity" ng-change="changecity()" ng-bind="citycity"></adsf>
+            <span>GPS定位</span>
+        </li>
+    </div>
+    <ul class="aui-list aui-list-in">
+        <!--<li class="aui-list-header">-->
+            <!--<p>&nbsp;历史访问城市</p>-->
+        <!--</li>-->
+        <!--<li class="aui-list-item">-->
+            <!--<ul class="list_rm_ul" class="zhv3">-->
+                <!--<li class="zhv4" ng-bind="city.city.name" ng-repeat="city in searchrecord"></li>-->
+            <!--</ul>-->
+        <!--</li>-->
+        <li class="aui-list-header">
+            <p>&nbsp;国内热门城市</p>
+        </li>
+        <li class="aui-list-item">
+            <ul class="list_rm_ul" class="zhv3">
+                <li class="zhv4" ng-bind="recity.city.name" ng-repeat="recity in hotcity" ng-click="hotcitydian(recity,recity.city.tId
+)"></li>
+            </ul>
+        </li>
+    </ul> 
+        
+   <ul class="aui-list aui-list-in asd" >
+   		<li class="aui-list-header hc1 zimu" style="font-weight: 900;">
+            A
+       </li>
+        <li class="aui-list-item" ng-repeat="zi in citylist|filter:{pinyinArea:'A'}" ng-click="city(zi.tId)">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-title" ng-bind="zi.name"></div>
+            </div>
+        </li>
+        <li class="aui-list-header hc1 zimu" style="font-weight: 900;">
+            B
+        </li>
+        <li class="aui-list-item" ng-repeat="zi in citylist|filter:{pinyinArea:'B'}" ng-click="city(zi.tId)">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-title" ng-bind="zi.name"></div>
+            </div>
+        </li>
+        <li class="aui-list-header hc1 zimu" style="font-weight: 900;">
+            C
+        </li>
+        <li class="aui-list-item" ng-repeat="zi in citylist|filter:{pinyinArea:'C'}" ng-click="city(zi.tId)">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-title" ng-bind="zi.name"></div>
+            </div>
+        </li>
+        <li class="aui-list-header hc1 zimu" style="font-weight: 900;">
+            D
+        </li>
+        <li class="aui-list-item" ng-repeat="zi in citylist|filter:{pinyinArea:'D'}" ng-click="city(zi.tId)">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-title" ng-bind="zi.name"></div>
+            </div>
+        </li>
+        <li class="aui-list-header hc1 zimu" style="font-weight: 900;">
+            E
+        </li>
+        <li class="aui-list-item" ng-repeat="zi in citylist|filter:{pinyinArea:'E'}" ng-click="city(zi.tId)">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-title" ng-bind="zi.name"></div>
+            </div>
+        </li>
+        <li class="aui-list-header hc1 zimu" style="font-weight: 900;">
+            F
+        </li>
+        <li class="aui-list-item" ng-repeat="zi in citylist|filter:{pinyinArea:'F'}" ng-click="city(zi.tId)">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-title" ng-bind="zi.name"></div>
+            </div>
+        </li>
+        <li class="aui-list-header hc1 zimu" style="font-weight: 900;">
+            G
+        </li>
+        <li class="aui-list-item" ng-repeat="zi in citylist|filter:{pinyinArea:'G'}" ng-click="city(zi.tId)">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-title" ng-bind="zi.name"></div>
+            </div>
+        </li>
+        <li class="aui-list-header hc1 zimu" style="font-weight: 900;">
+            H
+        </li>
+        <li class="aui-list-item" ng-repeat="zi in citylist|filter:{pinyinArea:'H'}" ng-click="city(zi.tId)">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-title" ng-bind="zi.name"></div>
+            </div>
+        </li>
+        <li class="aui-list-header hc1 zimu" style="font-weight: 900;">
+            I
+        </li>
+        <li class="aui-list-item" ng-repeat="zi in citylist|filter:{pinyinArea:'I'}" ng-click="city(zi.tId)">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-title" ng-bind="zi.name"></div>
+            </div>
+        </li>
+        <li class="aui-list-header hc1 zimu" style="font-weight: 900;">
+            J
+        </li>
+        <li class="aui-list-item" ng-repeat="zi in citylist|filter:{pinyinArea:'J'}" ng-click="city(zi.tId)">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-title" ng-bind="zi.name"></div>
+            </div>
+        </li>
+        <li class="aui-list-header hc1 zimu" style="font-weight: 900;">
+            K
+        </li>
+        <li class="aui-list-item" ng-repeat="zi in citylist|filter:{pinyinArea:'K'}" ng-click="city(zi.tId)">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-title" ng-bind="zi.name"></div>
+            </div>
+        </li>
+        <li class="aui-list-header hc1 zimu" style="font-weight: 900;">
+            L
+        </li>
+        <li class="aui-list-item" ng-repeat="zi in citylist|filter:{pinyinArea:'L'}" ng-click="city(zi.tId)">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-title" ng-bind="zi.name"></div>
+            </div>
+        </li>
+        <li class="aui-list-header hc1 zimu" style="font-weight: 900;">
+            M
+        </li>
+        <li class="aui-list-item" ng-repeat="zi in citylist|filter:{pinyinArea:'M'}" ng-click="city(zi.tId)">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-title" ng-bind="zi.name"></div>
+            </div>
+        </li>
+        <li class="aui-list-header hc1 zimu" style="font-weight: 900;">
+            N
+        </li>
+        <li class="aui-list-item" ng-repeat="zi in citylist|filter:{pinyinArea:'N'}" ng-click="city(zi.tId)">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-title" ng-bind="zi.name"></div>
+            </div>
+        </li>
+        <li class="aui-list-header hc1 zimu" style="font-weight: 900;">
+            O
+        </li>
+        <li class="aui-list-item" ng-repeat="zi in citylist|filter:{pinyinArea:'O'}" ng-click="city(zi.tId)">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-title" ng-bind="zi.name"></div>
+            </div>
+        </li>
+        <li class="aui-list-header hc1 zimu" style="font-weight: 900;">
+            P
+        </li>
+        <li class="aui-list-item" ng-repeat="zi in citylist|filter:{pinyinArea:'P'}" ng-click="city(zi.tId)">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-title" ng-bind="zi.name"></div>
+            </div>
+        </li>
+        <li class="aui-list-header hc1 zimu" style="font-weight: 900;">
+            Q
+        </li>
+        <li class="aui-list-item" ng-repeat="zi in citylist|filter:{pinyinArea:'Q'}" ng-click="city(zi.tId)">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-title" ng-bind="zi.name"></div>
+            </div>
+        </li>
+        <li class="aui-list-header hc1 zimu" style="font-weight: 900;">
+            R
+        </li>
+        <li class="aui-list-item" ng-repeat="zi in citylist|filter:{pinyinArea:'R'}" ng-click="city(zi.tId)">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-title" ng-bind="zi.name"></div>
+            </div>
+        </li>
+        <li class="aui-list-header hc1 zimu" style="font-weight: 900;">
+            S
+        </li>
+        <li class="aui-list-item" ng-repeat="zi in citylist|filter:{pinyinArea:'S'}" ng-click="city(zi.tId)">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-title" ng-bind="zi.name"></div>
+            </div>
+        </li>
+        <li class="aui-list-header hc1 zimu" style="font-weight: 900;">
+            T
+        </li>
+        <li class="aui-list-item" ng-repeat="zi in citylist|filter:{pinyinArea:'T'}" ng-click="city(zi.tId)">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-title" ng-bind="zi.name"></div>
+            </div>
+        </li>
+        <li class="aui-list-header hc1 zimu" style="font-weight: 900;">
+            U
+        </li>
+        <li class="aui-list-item" ng-repeat="zi in citylist|filter:{pinyinArea:'U'}" ng-click="city(zi.tId)">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-title" ng-bind="zi.name"></div>
+            </div>
+        </li>
+        <li class="aui-list-header hc1 zimu" style="font-weight: 900;">
+            V
+        </li>
+        <li class="aui-list-item" ng-repeat="zi in citylist|filter:{pinyinArea:'V'}" ng-click="city(zi.tId)">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-title" ng-bind="zi.name"></div>
+            </div>
+        </li>
+        <li class="aui-list-header hc1 zimu" style="font-weight: 900;">
+            W
+        </li>
+        <li class="aui-list-item" ng-repeat="zi in citylist|filter:{pinyinArea:'W'}" ng-click="city(zi.tId)">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-title" ng-bind="zi.name"></div>
+            </div>
+        </li>
+        <li class="aui-list-header hc1 zimu" style="font-weight: 900;">
+            X
+        </li>
+        <li class="aui-list-item" ng-repeat="zi in citylist|filter:{pinyinArea:'X'}" ng-click="city(zi.tId)">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-title" ng-bind="zi.name"></div>
+            </div>
+        </li>
+        <li class="aui-list-header hc1 zimu" style="font-weight: 900;">
+            Y
+        </li>
+        <li class="aui-list-item" ng-repeat="zi in citylist|filter:{pinyinArea:'Y'}" ng-click="city(zi.tId)">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-title" ng-bind="zi.name"></div>
+            </div>
+        </li>
+        <li class="aui-list-header hc1 zimu" style="font-weight: 900;">
+            Z
+        </li>
+        <li class="aui-list-item" ng-repeat="zi in citylist|filter:{pinyinArea:'Z'}" ng-click="city(zi.tId)">
+            <div class="aui-list-item-inner">
+                <div class="aui-list-item-title" ng-bind="zi.name"></div>
+            </div>
+        </li>
+        
+   </ul>
+</div>
+<div class="zhv3 h2c zflist" style="position: fixed;bottom: 5%; right: 1%;text-align: center;color: #1C82D4;font-size: 0.24rem;">
+        <div>热门</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        <div>F</div>
+        <div>G</div>
+        <div>H</div>
+        <div>I</div>
+        <div>J</div>
+        <div>K</div>
+        <div>L</div>
+        <div>M</div>
+        <div>N</div>
+        <div>O</div>
+        <div>P</div>
+        <div>Q</div>
+        <div>R</div>
+        <div>S</div>
+        <div>T</div>
+        <div>U</div>
+        <div>V</div>
+        <div>W</div>
+        <div>X</div>
+        <div>Y</div>
+        <div>Z</div>
+    </div>
+    <div class="zhv5 biaoqian" style="display: none;">
+        A
+    </div>
+<script>
+	
+  var ic = [];
+  $(function() {
+    var listgt = $(".zflist div").eq(0).height();
+    $(".zflist div").each(          //侧栏26个字母
+      function(r) {
+        ic.push($(".zflist div").eq(r).offset().top - $(window).scrollTop())
+      }
+    )
+    
+    $(".zflist").on("touchstart", function(event) {      //触摸出现
+      ff(event)
+      $(".biaoqian").show();
+    })
+    
+    
+    $(".zflist").on("touchend", function() {         //点击跳转
+//		console.log($(".aui-list-header").eq(icae).offset().top/1000+'rem')
+      	$('.citybigbox').animate({
+      		scrollTop: $(".aui-list-header").eq(icae).offset().top+'rem',
+      		duration: 2000,
+        	easing: "swing"
+      	})
+      	$(".biaoqian").hide();
+      return false;
+    })
+    $(".zflist").on("touchmove", function(event) {
+      event.preventDefault();
+      ff(event)
+
+    })
+    function ff(event) {
+      var dheight = event.changedTouches[0].clientY;
+      
+      $(ic).each(
+        function(ri) {
+          if(dheight < ic[0]) {
+            overfun(0);
+            return false;
+          }
+          if(dheight > ic[ic.length - 1]) {
+            overfun(ic.length - 1);
+            return false;
+          }
+          if(ic[ri] < dheight && dheight < ic[ri] + listgt) {
+            overfun(ri);
+            return false;
+          }
+        }
+      )
+    }
+    var icae = 0;
+    function overfun(aic) {
+      icae = aic;
+      $(".biaoqian").html($(".zflist div").eq(aic).html());
+      $("html, body").stop(true);
+      return false;
+    }
+  })
+
+</script>

@@ -1,0 +1,46 @@
+<section class="content-header">
+		<h1>
+                                  公告管理
+       <button ng-click="oprationFinish.addNotice()" class="btn btn-primary btn-xs pull-right" type="button">新增公告</button>
+              </h1>
+</section>
+
+<section class="content">
+	<!-- Small boxes (Stat box) -->
+	<div class="form-group">
+		<select name="" ng-model="status" style="width: 120px">
+		<option value="-1">保存</option>
+		<option value="0">删除</option>
+		<option value="1" selected="selected">发布</option>
+	</select>
+		<button id="searchStatus" class="btn btn-xs btn-primary" ng-click="search()">查询</button>
+	</div>
+	<div class="row" ng-repeat="l in noticeList">
+
+		<div class="ibox float-e-margins">
+
+			<div class="ibox-title">
+				<button class="btn  btn-xs" style="background: #FFA200;color: #FFFFFF" ng-click="oprationFinish.release(l.id)" type="button">发布</button>
+				<button class="btn btn-primary btn-xs" ng-click="oprationFinish.edit(l.id)" type="button">编辑</button>
+				<button class="btn btn-success  btn-xs" ng-click="oprationFinish.save(l.id,l.content)" type="button">保存</button>
+				<button class="btn btn-danger  btn-xs" ng-click="oprationFinish.del(l.id)" type="button">删除</button>
+				<div class="info pull-right">
+					<label ng-bind="oprationFinish.getSatusTxt(l.status)+'人:'"></label>
+					<span style="color: #AFEDB7;" ng-bind="l.createUser"></span>
+					<label>时间:</label>
+					<span style="color:#FF6D69;" ng-bind="oprationFinish.dateFormat(l.modifyTime)"></span>
+					<label>状态:</label>
+							<span style="background: #14D1FF;border-radius: 5px;" ng-bind="oprationFinish.getSatusTxt(l.status)"></span>
+						</div>
+					</div>
+
+					<div class="ibox-content" id={{'click2edit'+l.id}}>
+						<div  ng-class="{'normal':true}" class={{'click2edit'+l.id}}  ng-bind-html="TrustDangerousSnippet(l.content)">
+						</div>
+						<div class="info pull-right">
+							<span class="text-primary" ng-click="oprationFinish.showAllInfo(l.id,$event)">查看更多>></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>

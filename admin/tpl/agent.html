@@ -1,0 +1,67 @@
+<section class="content-header">
+    <h1>代理商管理</h1>
+</section>
+<section class="content">
+    <div class="shenga-title">
+        <span class="shenga-title-left">代理商管理</span>
+        <div class="shenga-title-right">
+            <button  class="btn btn-xs btn-primary" style="background: #2692FF" ng-click="addAgentFun()">添加</button>
+        </div>
+    </div>
+    <div style="background: #fff">
+        <table id="advertise-table" class="table"></table>
+    </div>
+
+</section>
+
+<div id="agentModal" style="display:none;padding: 10px;">
+    <div class="info"><label>登录账户:</label><input  type="text" ng-model="addAgent.username" class="modifyInfo"></div>
+    <div class="info"><label>登录密码:</label><input  type="text" ng-model="addAgent.password" class="modifyInfo"></div>
+    <div class="info"><label>id号:</label><input id="agentId" type="text" ng-model="addAgent.uid" class="modifyInfo"></div>
+    <div class="info">
+        <label>区域(省):</label><select ng-change="provinceChange(province)" ng-model="province" class="modifyInfo">
+        <option ng-repeat="p in provinceList" value="{{p.tId}}" ng-bind="p.name"></option>
+    </select>
+    </div>
+    <div class="info">
+        <label>区域(市):</label><select ng-change="cityChange(city)" ng-model="city" class="modifyInfo">
+        <option ng-repeat="c in cityList" value="{{c.tId}}" ng-bind="c.name"></option>
+    </select>
+    </div>
+    <div class="info">
+        <label>区域(区):</label><select class="modifyInfo" ng-model="addAgent.districtId" >
+        <option ng-repeat="d in districtList" value="{{d.tId}}" ng-bind="d.name"></option>
+    </select>
+    </div>
+
+
+    <div class="info"><label>描述信息:</label><input id="typeName" type="text" class="modifyInfo" ng-model="addAgent.description"></div>
+    <div class="info"><label>代理时间:</label><input  type="date" id="start" class="modifyInfo"></div>
+    <div class="info"><label>结束时间:</label><input  type="date" id="end" class="modifyInfo"> </div>
+    <div class="info">
+        <label>招商经理:</label><select  ng-model="addAgent.zhaoshangManagerId" class="modifyInfo">
+            <option ng-repeat="z in zhaoshang" value="{{z.id}}" ng-bind="z.user.nickname"></option>
+        </select></div>
+    <div class="info">
+        <label>客户经理:</label><select  ng-model="addAgent.kehuManagerId" class="modifyInfo">
+            <option ng-repeat="k in kehu" value="{{k.id}}" ng-bind="k.user.nickname"></option>
+        </select>
+    </div>
+</div>
+
+<div id="modifyAgentInfo" style="display:none;padding: 10px;">
+   <!-- <div><label>真实姓名:</label><input  type="text"id="realname"></div>
+    <div><label>代理商电话:</label><input  type="text" id="mobile"></div>-->
+    <div class="info"><label>描述信息:</label><input  type="text" id="description" class="modifyInfo"></div>
+    <div class="info"><label>代理时间:</label><input  type="date"  id="endTime" class="modifyInfo"></div>
+    <div class="info"><label>代理过期时间:</label><input  type="date" id="startTime" class="modifyInfo"></div>
+    <div class="info">
+        <label>招商经理:</label><select id="zhaoshangManagerId" class="modifyInfo">
+            <option ng-repeat="z in zhaoshang" value="{{z.id}}" ng-bind="z.user.nickname"></option>
+        </select></div>
+    <div class="info">
+        <label>客户经理:</label><select id="kehuManagerId" class="modifyInfo">
+            <option ng-repeat="k in kehu" value="{{k.id}}" ng-bind="k.user.nickname"></option>
+        </select>
+    </div>
+</div>

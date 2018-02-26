@@ -1,0 +1,24 @@
+<div class="unassessbigbox" infinite-scroll='order.order(uid)' infinite-scroll-disabled='order.orderBusy' infinite-scroll-distance='1'>
+    <ul class="list_content" >
+        <li ng-repeat="order in order.orderArray" ng-click="xiang(order.merchant.id)">
+            <img class="seller_avatar" ng-src="{{order.merchant.mainImage}}" />
+            <div class="seller_infos">
+                <div class="seller_name" ng-bind="order.merchant.nickname"></div>
+                <!--<div class="seller_distence" ng-click="toUrl('/user/grade')">去评价</div>-->
+                <div class="seller_distence" ng-click="ping(order.merchant.id,order.id)">去评价</div>
+                
+                <div class="seller_position">
+                    <img src="images/index/position.png" />
+                    <div ng-bind="order.merchant.addr|limitTo:15"></div>
+                </div>
+                <p class="time">消费时间：<span ng-bind="order.merchant.createTime|date:'yyyy-MM-dd HH:mm'"></span></p>
+                <p class="money">消费金额：<span>￥</span><span ng-bind="order.rebateAmount"></span></p>
+                <p class="fanmoney">返利金额：<span>￥</span><span ng-bind="order.rebate.toFixed(2)"></span></p>
+            </div>
+        </li>
+    </ul>
+    <div class="bei">
+        <img src="images/money/no.png" alt="">
+        <p>暂无评价订单</p>
+    </div>
+</div>

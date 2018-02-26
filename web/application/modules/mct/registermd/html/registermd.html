@@ -1,0 +1,97 @@
+<div id="allmap"></div>
+<div class="registertwo">
+	 <div class="register_main">
+    	<img src="images/login/header_02.png"/>
+        <div class="username_group register_input_group" ng-click="toUrl('/mct/city')">
+            <span>城市</span>
+            <p class="right" >
+            	<span ng-bind="citycity">上海</span>
+            	<img src="images/login/箭头.png"/>
+            </p>
+        </div>
+        <div class="code_group register_input_group ">
+              <span>名称</span>
+              <input type="text" ng-model="shmc" placeholder="输入商户名称" />
+        </div>
+        <div class="password_group register_input_group ">
+               <span>地址</span> 
+               <input type="text" ng-model="dizhi" placeholder="添加商户地址" />
+               <h4 class="right">
+               		<img src="images/login/定位.png"/>
+               		<span ng-bind="citycity">上海</span>
+               </h4>         
+        </div>
+        <div class="username_group register_input_group" ng-click="type()" ng-class="{'active':xuan==true}">
+                <span>分类</span>
+                <h4 class="right">
+                	<span ng-bind="typename"></span>
+                	<img src="images/login/箭头.png"/>
+                </h4>
+        </div>
+        <div class="code_group register_input_group ">
+               <span>电话</span> 
+               <input type="text" ng-model="code" placeholder="输入商户电话" />
+        </div>
+        <div class="username_group register_input_group"  id="addtime">
+               <span>营业时间</span>
+               <h4 class="right">
+               		<span ng-bind="timerange"></span>
+               		<img src="images/login/箭头.png"/>
+               	</h4>
+        </div>
+        <div class="shang">
+        	<span>上传门店图片</span>
+        	<div class="add">
+        		<div class="adda">+</div>
+        		<input type="file" id="one-input" accept="image/*" file-model="images" onchange="angular.element(this).scope().img_upload(this.files)" name="file" class="file" />
+                <img ng-src="{{image}}" alt="" />    
+        	</div>
+        </div>
+        <div class="register_btn" tapmode="" ng-click="register()">下一步</div>
+    </div>
+	<div class="type" ng-show="xuan==false"> 
+		<div class="typecon">
+			<div class="typecontop">
+				<span ng-click="qu()">取消</span>
+				<span ng-click="que()">确定</span>
+			</div>
+			<ul class="typeconbottom">
+				<li ng-repeat="mctlist in mcttype" ng-click="dian(mctlist.typeName,mctlist.typeid,$index)" ng-bind="mctlist.typeName"  class="con"></li>
+			</ul>
+		</div>
+	</div>
+	<!--<div class="time" ng-show="shi==false">
+		<div class="timecon">
+			<div class="timecontop">
+				<span ng-click="ququ()">取消</span>
+				<span ng-click="queque()">确定</span>
+			</div>
+			<div class="timeconbottom" style="height: 1rem;margin:0 auto;margin-top: 0.5rem;">
+				<input class="range-slider" type="hidden" value="0,1440"/>
+				<!--<button id="g2">获取值</button>-->
+			<!--</div>
+		</div>
+	</div>-->
+</div>
+ 
+<!--<script type="text/javascript">
+    $(function () {
+        var currYear = (new Date()).getFullYear();	
+        var opt={};
+        opt.datetime = {preset : 'datetime'};
+        opt.default = {
+                    theme: 'android-ics light', //皮肤样式
+                    display: 'modal', //显示方式 
+                    mode: 'scroller', //日期选择模式
+                    dateFormat: 'hh:mm',
+                    lang: 'zh',
+                    showNow: true,
+                    nowText: "今天",
+                    startYear: currYear, //开始年份
+                    endYear: currYear + 10 //结束年份
+        };
+
+        var optDateTime = $.extend(opt['datetime'], opt['default']);
+        $("#appDateTime").mobiscroll(optDateTime).datetime(optDateTime);
+    });
+    </script>-->

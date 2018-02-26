@@ -1,0 +1,342 @@
+*{
+  margin:0;
+  padding:0;
+  font-size: 0.28rem;
+}
+
+.fanlibigbox{
+  background: #f0f0f0;
+  width: 7.5rem;
+  height:100%;
+
+  .bei{
+    height: 2.5rem;
+    position: fixed;
+    top: 3.48rem;
+    left: 2.94rem;
+    display: none;
+
+    img{
+      width: 1.62rem;
+      height: 1.92rem;
+      margin: 0 auto;
+    }
+
+    p{
+      text-align: center;
+      font-size: 0.26rem;
+      color: #888;
+      margin-top: 0.1rem;
+    }
+  }
+
+  .fintop {
+    height: 1rem;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 0.01rem;
+    position: fixed;
+
+    li {
+      height: 1rem;
+      line-height: 1rem;
+      background: #ffffff;
+      border-bottom: 0.01rem solid #f0f0f0;
+      float: left;
+      text-align: center;
+      position: relative;
+
+        i{
+            position: absolute;
+            top: 0.5rem;
+            right: 0.2rem;
+        
+            img {
+                width: 0.14rem;
+                height: 0.14rem;
+                margin-left: 0.4rem;
+                float: left;
+              }
+        }
+    }
+    li:nth-child(1){
+        width: 35%;
+    }
+    li:nth-child(2){
+        width: 13%;
+    }
+    li:nth-child(3){
+        width: 17%;
+    }
+    li:nth-child(4){
+        width: 17%;
+    }
+    li:nth-child(5){
+        width: 18%;
+    }
+    .active{
+      color: #1C82D4;
+    }
+  }
+
+  .fanbot {
+    height: auto;
+    width: 100%;
+    position: relative;
+    margin-top: 1rem;
+
+    .fanli{
+      height:auto;
+      width:100%;
+      position: absolute;
+      top:0;
+      left:0;
+
+      ul{
+          width: 100%;
+        height: 1rem;
+        line-height: 1rem;
+        background: #fff;
+        border-bottom: 0.01rem solid #f0f0f0;
+
+        li{
+          float: left;
+          text-align: center;
+          color: #353535;
+          font-size: 0.24rem;
+
+          span{
+            font-size: 0.2rem;
+            color: #25D41C;
+          }
+        }
+        li:nth-child(1){
+            width: 35%;
+        }
+        li:nth-child(2){
+            width: 13%;
+        }
+        li:nth-child(3){
+            width: 17%;
+        }
+        li:nth-child(4){
+            width: 17%;
+        }
+        li:nth-child(5){
+            width: 18%;
+        }
+
+
+      }
+
+    }
+
+
+  }
+
+  .fandi{
+    height: 1rem;
+    line-height: 1rem;
+    position: fixed;
+    bottom:0;
+    background: #fff;
+    width:100%;
+
+    .ji{
+      width: 3rem;
+      margin-left: 0.4rem;
+      color: #353535;
+      float: left;
+      span{
+
+      }
+    }
+
+    .li{
+      float: right;
+      width: 2rem;
+      color: #353535;
+      margin-right: 0.4rem;
+      span{
+        color: #25D41C;
+      }
+    }
+  }
+
+  .main_page{
+    width: 100%;
+    height: 100%;
+    background:rgba(0,0,0,0.6);
+    position: fixed;
+    top: 1rem;
+
+    .top_div{
+      width: 100%;
+      height: 40vw;
+      background: #506695;
+      overflow: hidden;
+    }
+    .logo{
+      width: 18%;
+      margin: 10px auto 5px auto;
+    }
+    .top_text_1,.top_text_2{
+      width: 100%;
+      text-align: center;
+      line-height: 7vw;
+      color: white;
+      font-size: 4.5vw;
+    }
+    .top_text_2{
+      margin-bottom: 5vw;
+    }
+    .nine_button{
+      width: 100%;
+    }
+    .button{
+      width: 33.33%;
+      height: 33.33vw;
+      float: left;
+      font-size: 4vw;
+    }
+    .button_img{
+      width: 20%;
+      margin: 30% auto 5% auto;
+    }
+    .button_text{
+      width: 100%;
+      text-align: center;
+    }
+    /*release_record*/
+    .release_main{
+      width: 100%;
+    }
+    .release_title{
+      width: 100%;
+      height: 15vw;
+      overflow: hidden;
+      background: #f2f2f2;
+    }
+    .release_title_left{
+      width: 49.5%;
+      height: 10vw;
+      margin:2.5vw 0;
+      float: left;
+      border-right: 2px solid #8E97AF;
+      overflow: hidden;
+    }
+    .left_img{
+      width: 15%;
+      margin: 1.4vw 3% 1.6vw 15%;
+      float: left;
+    }
+    .left_text{
+      width: 67%;
+      float: left;
+      font-size: 3vw;
+      line-height: 4vw;
+      margin-top: 1.5vw;
+      color: #506695;
+    }
+    .release_title_right{
+      width: 49.5%;
+      height: 10vw;
+      margin:2.5vw 0;
+      float: right;
+    }
+    .right_img{
+      width: 15%;
+      margin: 1.4vw 3% 1.6vw 15%;
+      float: left;
+    }
+    .right_text{
+      width: 67%;
+      float: left;
+      font-size: 3vw;
+      line-height: 4vw;
+      margin-top: 1.5vw;
+      color: #506695;
+    }
+    .gray_text{
+      color: #8D8D8D;
+    }
+    .release_records{
+      width: 100%;
+    }
+    .record{
+      width: 100%;
+      height:13vw ;
+      border-bottom: 1px solid #ECECEC;
+    }
+    .record_left{
+      width: 47%;
+      padding-left: 3%;
+      float: left;
+      text-align: left;
+      margin-top: 1vw;
+    }
+    .record_right{
+      width: 47%;
+      padding-right: 3%;
+      float: left;
+      text-align: right;
+      margin-top: 1vw;
+    }
+    .record_left_top,.record_right_top{
+      font-size: 4.1vw;
+      line-height: 7vw;
+    }
+    .record_left_bottom,.record_right_bottom{
+      font-size: 3.5vw;
+      color: #8D8D8D;
+    }
+    .record_small{
+      font-size: 2.5vw;
+      color: #8D8D8D;
+    }
+    /*select_record*/
+    .select_start_date{
+      width: 100%;
+      height: 1rem;
+      font-size: 0.24rem;
+      color: #353535;
+      overflow: hidden;
+      line-height: 1rem;
+      border-bottom: 0.01rem solid #f0f0f0;
+      background: #fff;
+    }
+    .start_date_left{
+      width: 3.35rem;
+      padding-left: 0.4rem;
+      float: left;
+    }
+    .start_date_right{
+      width: 3.35rem;
+      padding-right: 0.4rem;
+      text-align: right;
+      float: left;
+    }
+    .start_date_right input{
+      background:transparent;
+      border: none;
+      font-size: 0.24rem;
+      color: #666666;
+      text-align: center;
+    }
+    .select_records{
+      width: 100%;
+      margin-top: 6vw;
+    }
+    p{
+      height: 1rem;
+      line-height: 1rem;
+      width:100%;
+      text-align: center;
+      color: #1C82D4;
+      font-size: 0.3rem;
+      background: #FFFFFF;
+
+    }
+
+  }
+}

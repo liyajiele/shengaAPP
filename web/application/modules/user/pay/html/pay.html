@@ -1,0 +1,62 @@
+<div class="paybigbox">
+    <div class="paytop">
+        <div class="paytoptop">
+            <div class="payimg">
+                <img ng-src="{{details.mainImage}}" alt="">
+            </div>
+            <p ng-bind="details.nickname"></p>
+        </div>
+        <div class="paypay">
+            <i>
+            	<img src="images/pay/hpay.png" alt="" ng-show="xuana==false" class="hui">
+            	<img src="images/pay/pay.png" alt="" ng-show="xuana==true" class="hei">
+            </i>
+<!--            <input type="text" placeholder="按价格搜索" ng-model="totalamount" title="按价格搜索" calculator>-->
+            <input type="text" placeholder="请输入支付金额 " ng-model="totalamount" class="zhipay" ng-class="{'activea':xuana==true}" ng-focus="display()" readonly >
+        </div>
+    </div>
+    <div class="yupay">
+        <div class="yupaytop">
+            <p>余额支付 <input type="radio" name="" class="aa" ng-checked='mychecked' ng-click="myclick()"></p>
+            <div class="payzhi">账户余额：<span ng-bind="money.toFixed(2)"></span></div>
+        </div>
+        <div class="nopay">
+        	<p>不参与打折金额</p>
+        	<div class="nopayjia" ng-click="dian()" ng-class="{'active':xuan==true}">
+        		<img src="images/pay/cha.png" ng-show="xuan==false" class="jia"/>
+        		<img src="images/pay/jia.png" ng-show="xuan==true" class="cha"/>
+        	</div>
+        </div>
+    </div>
+    
+    <div class="zhe" ng-show="xuan==false" >
+        <i>
+        	<img src="images/pay/hpay.png" alt="">
+    	</i>
+        <input type="text" placeholder="请输入不参与打折金额 " ng-model="nozhe" class="zhepay" ng-focus="displayx()" readonly  >
+    </div>
+    
+    <div class="paytrue">
+        <div class="fan">返现</div>
+        <div class="dazhe">(<span ng-bind="damoney.toFixed(2)"></span>元)</div>
+        <div class="true" ng-click="truepay()">确认支付</div>
+    </div>
+    <div class="jianpan jianpand">    <!--小键盘总金额-->
+    	<ul class="jianleft">
+    		<li ng-repeat="a in Arr" ng-click="valClick(a)" ng-bind="a"></li>
+    	</ul>
+    	<div class="jianright">
+    		<div class="tui" ng-click="valClick1()"><img src="images/pay/del.png" alt="" /></div>
+    		<div class="success" ng-click="valClick2()">完成</div>
+    	</div>
+    </div>
+    <div class="jianpan jianpanx">    <!--小键盘总金额-->
+    	<ul class="jianleft">
+    		<li ng-repeat="b in brr" ng-click="valClickx(b)" ng-bind="b"></li>
+    	</ul>
+    	<div class="jianright">
+    		<div class="tui" ng-click="valClick1x()"><img src="images/pay/del.png" alt="" /></div>
+    		<div class="success" ng-click="valClick2x()">完成</div>
+    	</div>
+    </div>
+</div>

@@ -1,0 +1,19 @@
+<div class="mystorezhangxin">
+	<div class="header">
+	    <!--<h1>王爱民,</h1>-->
+	    <p><span ng-bind="name">亲爱的</span>,欢迎使用省啊商户版</p>
+	    <h2>今日营业额 (元)</h2>
+	    <h3 ng-bind="tumover">0.00</h3>
+	</div>
+	<div class="zxleft left"><span ng-bind="orderNum">0</span><br />今日订单</div>
+	<div class="zxright right"><span ng-bind="timoney.toFixed(2)">0.00</span><br />可提现金额 (元)</div>
+	<div class="hez left" ng-click="toUrl('/mct/details')"><img src="images/authentication/9.png" alt="" style="float: none;" /><br />门店管理</div>
+	<div class="hez" ng-click="toUrl('/mct/fanli')"><img src="images/authentication/ding.png" alt="" style="float: none;" /><br />订单管理</div>
+	<div class="hez right"  ng-click="toUrl('/mct/finance')"><img src="images/authentication/cai.png" alt="" style="float: none;" /><br />财务记录</div>
+	<div class="hez left" ng-click="toUrl('/mct/payti')"><img src="images/authentication/zhang.png" alt="" style="float: none;" /><br />账户提现</div>
+    <div class="hez" ng-click="toUrl('/mct/contacts')"><img src="images/authentication/11.png" alt="" style="float: none;" /><br />人脉管理</div>
+    <div class="hez right" ng-click="toUrl('/mct/code')"><img src="images/authentication/10.png" alt="" style="float: none;" /><br />口碑管理</div>
+	<div class="hez left" ng-click="toUrl('/mct/yijian')"><img src="images/authentication/yijian.png" alt="" style="float: none;" /><br />意见反馈</div>
+    <div class="hez" ng-click="toUrl('/mct/aboutour')"><img src="images/authentication/about.png" alt="" style="float: none;" /><br />关于我们</div>
+    <div class="hez right"><a href="tel:021-34792118"><img src="images/authentication/4.png" alt="" style="float: none;" /><br />联系我们</a></div>
+</div>

@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 0.28rem; }
+
+.fanlibigbox {
+  background: #f0f0f0;
+  width: 7.5rem;
+  height: 100%; }
+  .fanlibigbox .bei {
+    height: 2.5rem;
+    position: fixed;
+    top: 3.48rem;
+    left: 2.94rem;
+    display: none; }
+    .fanlibigbox .bei img {
+      width: 1.62rem;
+      height: 1.92rem;
+      margin: 0 auto; }
+    .fanlibigbox .bei p {
+      text-align: center;
+      font-size: 0.26rem;
+      color: #888;
+      margin-top: 0.1rem; }
+  .fanlibigbox .fintop {
+    height: 1rem;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 0.01rem;
+    position: fixed; }
+    .fanlibigbox .fintop li {
+      height: 1rem;
+      line-height: 1rem;
+      background: #ffffff;
+      border-bottom: 0.01rem solid #f0f0f0;
+      float: left;
+      text-align: center;
+      position: relative; }
+      .fanlibigbox .fintop li i {
+        position: absolute;
+        top: 0.5rem;
+        right: 0.2rem; }
+        .fanlibigbox .fintop li i img {
+          width: 0.14rem;
+          height: 0.14rem;
+          margin-left: 0.4rem;
+          float: left; }
+    .fanlibigbox .fintop li:nth-child(1) {
+      width: 35%; }
+    .fanlibigbox .fintop li:nth-child(2) {
+      width: 13%; }
+    .fanlibigbox .fintop li:nth-child(3) {
+      width: 17%; }
+    .fanlibigbox .fintop li:nth-child(4) {
+      width: 17%; }
+    .fanlibigbox .fintop li:nth-child(5) {
+      width: 18%; }
+    .fanlibigbox .fintop .active {
+      color: #1C82D4; }
+  .fanlibigbox .fanbot {
+    height: auto;
+    width: 100%;
+    position: relative;
+    margin-top: 1rem; }
+    .fanlibigbox .fanbot .fanli {
+      height: auto;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0; }
+      .fanlibigbox .fanbot .fanli ul {
+        width: 100%;
+        height: 1rem;
+        line-height: 1rem;
+        background: #fff;
+        border-bottom: 0.01rem solid #f0f0f0; }
+        .fanlibigbox .fanbot .fanli ul li {
+          float: left;
+          text-align: center;
+          color: #353535;
+          font-size: 0.24rem; }
+          .fanlibigbox .fanbot .fanli ul li span {
+            font-size: 0.2rem;
+            color: #25D41C; }
+        .fanlibigbox .fanbot .fanli ul li:nth-child(1) {
+          width: 35%; }
+        .fanlibigbox .fanbot .fanli ul li:nth-child(2) {
+          width: 13%; }
+        .fanlibigbox .fanbot .fanli ul li:nth-child(3) {
+          width: 17%; }
+        .fanlibigbox .fanbot .fanli ul li:nth-child(4) {
+          width: 17%; }
+        .fanlibigbox .fanbot .fanli ul li:nth-child(5) {
+          width: 18%; }
+  .fanlibigbox .fandi {
+    height: 1rem;
+    line-height: 1rem;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    width: 100%; }
+    .fanlibigbox .fandi .ji {
+      width: 3rem;
+      margin-left: 0.4rem;
+      color: #353535;
+      float: left; }
+    .fanlibigbox .fandi .li {
+      float: right;
+      width: 2rem;
+      color: #353535;
+      margin-right: 0.4rem; }
+      .fanlibigbox .fandi .li span {
+        color: #25D41C; }
+  .fanlibigbox .main_page {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 1rem;
+    /*release_record*/
+    /*select_record*/ }
+    .fanlibigbox .main_page .top_div {
+      width: 100%;
+      height: 40vw;
+      background: #506695;
+      overflow: hidden; }
+    .fanlibigbox .main_page .logo {
+      width: 18%;
+      margin: 10px auto 5px auto; }
+    .fanlibigbox .main_page .top_text_1, .fanlibigbox .main_page .top_text_2 {
+      width: 100%;
+      text-align: center;
+      line-height: 7vw;
+      color: white;
+      font-size: 4.5vw; }
+    .fanlibigbox .main_page .top_text_2 {
+      margin-bottom: 5vw; }
+    .fanlibigbox .main_page .nine_button {
+      width: 100%; }
+    .fanlibigbox .main_page .button {
+      width: 33.33%;
+      height: 33.33vw;
+      float: left;
+      font-size: 4vw; }
+    .fanlibigbox .main_page .button_img {
+      width: 20%;
+      margin: 30% auto 5% auto; }
+    .fanlibigbox .main_page .button_text {
+      width: 100%;
+      text-align: center; }
+    .fanlibigbox .main_page .release_main {
+      width: 100%; }
+    .fanlibigbox .main_page .release_title {
+      width: 100%;
+      height: 15vw;
+      overflow: hidden;
+      background: #f2f2f2; }
+    .fanlibigbox .main_page .release_title_left {
+      width: 49.5%;
+      height: 10vw;
+      margin: 2.5vw 0;
+      float: left;
+      border-right: 2px solid #8E97AF;
+      overflow: hidden; }
+    .fanlibigbox .main_page .left_img {
+      width: 15%;
+      margin: 1.4vw 3% 1.6vw 15%;
+      float: left; }
+    .fanlibigbox .main_page .left_text {
+      width: 67%;
+      float: left;
+      font-size: 3vw;
+      line-height: 4vw;
+      margin-top: 1.5vw;
+      color: #506695; }
+    .fanlibigbox .main_page .release_title_right {
+      width: 49.5%;
+      height: 10vw;
+      margin: 2.5vw 0;
+      float: right; }
+    .fanlibigbox .main_page .right_img {
+      width: 15%;
+      margin: 1.4vw 3% 1.6vw 15%;
+      float: left; }
+    .fanlibigbox .main_page .right_text {
+      width: 67%;
+      float: left;
+      font-size: 3vw;
+      line-height: 4vw;
+      margin-top: 1.5vw;
+      color: #506695; }
+    .fanlibigbox .main_page .gray_text {
+      color: #8D8D8D; }
+    .fanlibigbox .main_page .release_records {
+      width: 100%; }
+    .fanlibigbox .main_page .record {
+      width: 100%;
+      height: 13vw;
+      border-bottom: 1px solid #ECECEC; }
+    .fanlibigbox .main_page .record_left {
+      width: 47%;
+      padding-left: 3%;
+      float: left;
+      text-align: left;
+      margin-top: 1vw; }
+    .fanlibigbox .main_page .record_right {
+      width: 47%;
+      padding-right: 3%;
+      float: left;
+      text-align: right;
+      margin-top: 1vw; }
+    .fanlibigbox .main_page .record_left_top, .fanlibigbox .main_page .record_right_top {
+      font-size: 4.1vw;
+      line-height: 7vw; }
+    .fanlibigbox .main_page .record_left_bottom, .fanlibigbox .main_page .record_right_bottom {
+      font-size: 3.5vw;
+      color: #8D8D8D; }
+    .fanlibigbox .main_page .record_small {
+      font-size: 2.5vw;
+      color: #8D8D8D; }
+    .fanlibigbox .main_page .select_start_date {
+      width: 100%;
+      height: 1rem;
+      font-size: 0.24rem;
+      color: #353535;
+      overflow: hidden;
+      line-height: 1rem;
+      border-bottom: 0.01rem solid #f0f0f0;
+      background: #fff; }
+    .fanlibigbox .main_page .start_date_left {
+      width: 3.35rem;
+      padding-left: 0.4rem;
+      float: left; }
+    .fanlibigbox .main_page .start_date_right {
+      width: 3.35rem;
+      padding-right: 0.4rem;
+      text-align: right;
+      float: left; }
+    .fanlibigbox .main_page .start_date_right input {
+      background: transparent;
+      border: none;
+      font-size: 0.24rem;
+      color: #666666;
+      text-align: center; }
+    .fanlibigbox .main_page .select_records {
+      width: 100%;
+      margin-top: 6vw; }
+    .fanlibigbox .main_page p {
+      height: 1rem;
+      line-height: 1rem;
+      width: 100%;
+      text-align: center;
+      color: #1C82D4;
+      font-size: 0.3rem;
+      background: #FFFFFF; }
+
+/*# sourceMappingURL=fanli.css.map */

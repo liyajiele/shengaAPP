@@ -1,0 +1,55 @@
+<div class="paysuccessbigbox">
+	<div class="paysucctop">
+		<div class="succimg">
+			<img src="images/pay/succ.jpg" alt="" />
+		</div>
+		<p>支付成功</p>
+		<div class="fanindex" ng-click=toUrl('/user/index')>返回首页</div>
+	</div>
+	<div class="mess">
+		<div class="messtop">
+			<h1 ng-bind="nickname"></h1>
+			<div class="detailscang"  ng-click="display()" ng-class="{'active':xuan==true}">
+            	<img src="images/collect/collectb.png" alt="" class="fff" ng-show="xuan==false">
+                <img src="images/collect/collect.png" alt="" class="red" ng-show="xuan==true">
+            </div>
+		</div>
+		<div class="messbo">
+			<p>消费金额:<span class="reda" ng-bind="totalAmount"></span>元</p>
+			<p>订单编号:<span ng-bind="orderNum"></span></p>
+		</div>
+		<div class="messbo">
+			<p>返利金额:<span class="greena" ng-bind="rebate.toFixed(2)"></span>元</p>
+			<p>消费时间:<span ng-bind="createTime"></span></p>
+		</div>
+	</div>
+	<div class="seller_list">
+        <div class="list_header">
+            <span class="like_tip">更多商家</span>
+            <!--<div class="change_list_btn" ng-click="">
+                <span>换一批</span><img src="images/index/changeListBtn.png" />
+            </div>-->
+        </div>
+        
+        <div class="list_contents" infinite-scroll='merchant.nearmerchant(mid)' infinite-scroll-disabled='merchant.merchantBusy' infinite-scroll-distance='1'>
+        	<ul class="list_content">
+	            <li ng-repeat="merchant in merchant.merchantArray" ng-click="xiang(merchant.id)">
+	                <img class="seller_avatar" ng-src="{{merchant.mainImage}}" />
+	                <div class="seller_infos">
+	                    <div class="seller_name" ng-bind="merchant.nickname"></div>
+	                    <div class="seller_distence"><span ng-bind="(merchant.distance/1000).toFixed(0)"></span>km</div>
+	                    <div class="seller_position">
+	                        <img src="images/index/position.png" />
+	                        <span>[</span>
+	                        <div ng-bind="merchant.addr"></div>
+	                        <span>]</span>
+	                    </div>
+                    	<div star rating-value="merchant.stars" max="max" on-hover="onHover" on-leave="onLeave" readonly="{{readonly}}" class="start"></div>
+	                    
+	                </div>
+	            </li>
+        	</ul>
+        </div>
+        
+    </div>
+</div>

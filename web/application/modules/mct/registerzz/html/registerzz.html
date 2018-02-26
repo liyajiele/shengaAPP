@@ -1,0 +1,77 @@
+<div class="registerthree">
+    <img src="images/login/zz_02.png" />
+    <div class="register_main">
+        <div class="username_group register_input_group cc" style="width: 7.5rem;height: 1.8rem;">
+            <div class="register_group_input">
+                	店铺名称<span ng-bind="shmc" style="float: none;"></span>
+            </div>
+            <div class="register_group_input">
+                	店铺地址<span ng-bind="dizhi" style="float: none;"></span>
+                <h4 class="right" ng-click="fan()">修改<img src="images/login/箭头.png" /></h4>
+            </div>
+            <div class="register_group_input">
+                	分类<span ng-bind="typename" style="float: none;margin-left: 0.85rem;"></span>
+            </div>
+        </div>
+        <div class="password_group register_input_group ">
+            <div class="register_group_input" style="font-size: 0.29rem;font-weight: bold;">
+                请填写身份信息
+            </div>
+        </div>
+        <div class="code_group register_input_group ">
+            <span>经营者姓名</span>
+            <input type="text" placeholder="请填写经营者姓名" ng-model="username" />
+        </div>
+        <div class="code_group register_input_group ">
+            <span>身份证号码</span>
+            <input type="text" placeholder="请填写经营者身份证" ng-model="idnumber"/>
+        </div>
+        <div class="username_group register_input_group" ng-click="toUrl('/mct/IDcard')">
+            <div class="register_group_input">
+                身份证附件<h4 class="right"><span ng-bind="zi">未上传</span><img src="images/login/箭头.png" style="margin-top: 0.25rem;"/></h4>
+            </div>
+        </div>
+        <div class="password_group register_input_group ">
+            <div class="register_group_input" style="font-size: 0.29rem;font-weight: bold;">
+                          请提供营业执照信息
+            </div>
+        </div>
+        <div class="code_group register_input_group ">
+            <div class="register_group_input">
+                        营业执照状态        
+            </div>
+        </div>
+        <div class="code_group register_input_group ">
+
+                        营业执照状态
+              <label ng-repeat="list in type">
+              	<input type="radio" style="margin-left: 0.5rem;margin-right: 0.1rem;vertical-align: middle;height: 0.3rem;width: 0.3rem;" value="" name="aa" ng-click="dian(list.id)"/>
+              	{{list.Name}}
+              </label>     
+            </div>
+
+        <div class="code_group register_input_group ">
+
+                        营业执照类型
+              <label ng-repeat="list in typea">
+              	<input type="radio" style="margin-left: 0.5rem;margin-right: 0.1rem;vertical-align: middle;height: 0.3rem;width: 0.3rem;" value="" name="bb" ng-click="diana(list.id)"/>
+              	{{list.Name}}
+              </label>    
+            </div>
+
+        <div class="username_group register_input_group " ng-click="toUrl('/mct/licence')">
+            <div class="register_group_input">
+                营业执照附件<h4 class="right"><span ng-bind="wen">未上传</span><img style="margin-top: 0.25rem;" src="images/login/箭头.png"/></h4>
+            </div>
+        </div>
+        <div class="username_group register_input_group" style="overflow: hidden;">
+            <div class="register_group_input">
+            	<input type="checkbox" ng-checked='mychecked' ng-click="myclick()" checked="checked" style="vertical-align: middle;"/>
+                	我已阅读并同意<span ng-click="toUrl('mct/shu')" style="float: none;cursor: pointer;color: #1C82D4;margin: 0;">《经营权授权书》</span>
+            </div>
+        </div>
+        <div class="register_btn" tapmode="" ng-click="register()">
+                      下一步
+        </div>
+    </div>
+</div>

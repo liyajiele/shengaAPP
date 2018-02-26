@@ -1,0 +1,80 @@
+
+.mystorezhangxin{
+    height: 100%;
+    background: #FFFFFF;
+    .header{
+        width: 7.5rem;
+        height: 3rem;
+        background:  url(../../../../../images/authentication/8.png) no-repeat;
+        background-size: cover;
+        text-align: center;
+        overflow: hidden;
+        p{
+            font-size: 0.28rem;
+            margin-top:0.3rem;
+            color: #FFFFFF;
+            
+            span{
+                font-size: 0.28rem;
+            }
+        }
+        h2{
+          font-size: 0.3rem;
+          margin-top:0.6rem;
+          color: #FFFFFF;  
+        }
+        h3{
+          font-size: 0.6rem;
+            margin-top:0.2rem;
+            color: #FFFFFF;  
+        }
+    }
+    .zxleft{
+        width: 3.73rem;
+        height: 1.2rem;
+        background: #FFFFFF;
+        text-align: center;
+        line-height: 0.4rem;
+        font-size: 0.26rem;
+        border-right: 0.01rem solid #efefef;
+        span{
+            margin-top: 0.2rem;
+            display: inline-block;
+            color: #1CB1D4;
+        }
+    }
+    .zxright{
+        width: 3.73rem;
+        height: 1.2rem;
+        background: #FFFFFF;
+        text-align: center;
+        line-height: 0.4rem;
+        font-size: 0.26rem;
+        span{
+            margin-top: 0.2rem;
+            display: inline-block;
+            color: #1CB1D4;
+        }
+    }
+    .hez{
+        width: 2.47rem;
+        height: 2.25rem;
+        background: #FFFFFF;
+        border-left:0.015rem solid #F0F0F0;
+        border-top: 0.015rem solid #F0F0F0;
+        text-align: center;
+        font-size: 0.26rem;
+        float:left;
+        img{
+            text-align: center;
+//          width: 0.67rem;
+            height: 0.52rem;
+            display: inline-block;
+            margin: 0.65rem 0 0.3rem 0;
+        }
+        a{
+            color: #353535;
+            font-size: 0.26rem;
+        }
+    }
+}

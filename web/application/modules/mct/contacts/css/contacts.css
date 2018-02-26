@@ -1,0 +1,87 @@
+.contactsbigbox {
+  height: 100%;
+  width: 7.5rem;
+  background: #f0f0f0;
+  font-size: 0.26rem; }
+  .contactsbigbox .contop {
+    height: 1rem;
+    width: 100%;
+    background: #fff; }
+    .contactsbigbox .contop li {
+      height: 0.6rem;
+      margin-top: 0.2rem;
+      line-height: 0.6rem;
+      float: left;
+      text-align: center;
+      width: 50%; }
+    .contactsbigbox .contop .active1 {
+      color: #1C82D4; }
+    .contactsbigbox .contop li:nth-child(1) {
+      width: 49%;
+      border-right: 0.01rem solid #888888; }
+  .contactsbigbox .conbottom {
+    height: auto;
+    width: 100%;
+    position: relative; }
+    .contactsbigbox .conbottom .conzhi {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: auto;
+      width: 100%; }
+      .contactsbigbox .conbottom .conzhi .zhilist {
+        height: 1rem;
+        width: 100%;
+        background: #FFF;
+        margin-bottom: 0.015rem; }
+        .contactsbigbox .conbottom .conzhi .zhilist .zhiimg {
+          width: 0.6rem;
+          height: 0.6rem;
+          background: #888888;
+          border-radius: 50%;
+          float: left;
+          margin: 0.2rem;
+          overflow: hidden; }
+          .contactsbigbox .conbottom .conzhi .zhilist .zhiimg img {
+            width: 100%; }
+        .contactsbigbox .conbottom .conzhi .zhilist .zhimess {
+          width: 6.5rem;
+          height: 100%;
+          float: left; }
+          .contactsbigbox .conbottom .conzhi .zhilist .zhimess p {
+            width: 100%;
+            height: 0.5rem;
+            line-height: 0.5rem;
+            font-size: 0.24rem;
+            padding: 0; }
+            .contactsbigbox .conbottom .conzhi .zhilist .zhimess p i {
+              float: left;
+              font-size: 0.24rem;
+              width: 2.5rem;
+              font-style: normal; }
+            .contactsbigbox .conbottom .conzhi .zhilist .zhimess p span {
+              float: left;
+              margin-left: 2rem; }
+          .contactsbigbox .conbottom .conzhi .zhilist .zhimess .message {
+            width: 100%;
+            height: 0.5rem;
+            line-height: 0.5rem;
+            font-size: 0.24rem;
+            color: #888; }
+            .contactsbigbox .conbottom .conzhi .zhilist .zhimess .message .mess {
+              float: left; }
+              .contactsbigbox .conbottom .conzhi .zhilist .zhimess .message .mess i {
+                float: left;
+                font-size: 0.24rem;
+                font-style: normal; }
+              .contactsbigbox .conbottom .conzhi .zhilist .zhimess .message .mess span {
+                float: left; }
+            .contactsbigbox .conbottom .conzhi .zhilist .zhimess .message .messa {
+              float: right;
+              margin-right: 0.8rem; }
+              .contactsbigbox .conbottom .conzhi .zhilist .zhimess .message .messa i {
+                float: right; }
+              .contactsbigbox .conbottom .conzhi .zhilist .zhimess .message .messa span {
+                float: right; }
+
+/*# sourceMappingURL=contacts.css.map */

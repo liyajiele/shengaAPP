@@ -1,0 +1,76 @@
+<div class="detailsbigbox">
+	<div class="details">
+		<div class="men">
+	    	<div class="menleft">
+	    		<!--<img src="images/authentication/mct.png" alt="" />-->
+	    		<img ng-src="{{image}}" alt="" />
+        		<input type="file" id="one-input" accept="image/*" file-model="images" onchange="angular.element(this).scope().img_upload(this.files)" name="file" class="file" />
+	    		<p>编辑</p>
+	    		<!--<div class="add">
+	        		<div class="adda">+</div>
+
+	                <img ng-src="{{image}}" alt="" />    
+	        	</div>-->
+	    	</div>
+	    	<div class="menright">
+	    		<h1 ng-bind="mct.nickname">兰州牛肉面</h1>
+	    		<div star rating-value="stars" max="max" on-hover="onHover" on-leave="onLeave" readonly="{{readonly}}" class="start"></div>
+	    		<p><span ng-bind="tag" ng-repeat="tag in arr"></span></p>
+	    	</div>
+	    </div>
+	    <div class="message">
+	    	<h1>店铺信息</h1>
+	    	<div class="addr"  ng-click="toUrl('/mct/address')">
+	    		<span>门店地址</span> 
+	    		<img src="images/index/rightarrows.png" alt=""/>
+	    		<span ng-bind="addr">注册时填写的地址</span>  
+	    	</div>
+	    	<div class="addr" ng-click="time()" ng-class="{'active':shi==true}">
+	    		<span>营业时间</span> 
+	    		<img src="images/index/rightarrows.png" alt="" />    		
+	    		<span ng-bind="shopHours">注册时填写的时间</span>  
+
+	    	</div>
+	    </div>
+	    <div class="message">
+	    	<h1>返利信息</h1>
+	    	<div ng-click="goul($index)" ng-class="{bian:$index ==chosed}" ng-repeat="x in records" class="addr">{{x.Name}}
+                <i ng-show="isShow==$index">√</i>
+            </div>
+	    </div>
+	    <div class="fan message">
+	    	<h1>返利额度</h1>
+	    	<ul class="fanbox">
+	    		<li ng-repeat="fanli in fan" ng-click="dian($index)" ng-bind="fanli.Name" ng-class="{biana:$index==chosedIndex}" class="con"></li>
+	    	</ul>
+	    </div>
+	    <div class="baobox">
+	    	<div class="btn" ng-click="xiu()">保存修改</div>
+	    </div>
+
+	</div>
+	<div class="detailsa">
+		<div class="zi">
+	    	<div class="zitop">
+	    		<span ng-click="quxiao()">取消</span>
+	    		<span ng-click="que()">确定</span>
+	    	</div>
+	    	<div class="zibottom">
+	    		<input type="text" placeholder="最低10%" ng-model="min"/>
+	    		<span>%</span>
+	    	</div>
+	    </div>
+	</div>
+	<div class="time" ng-show="shi==false">
+		<div class="timecon">
+			<div class="timecontop">
+				<span ng-click="ququ()">取消</span>
+				<span ng-click="queque()">确定</span>
+			</div>
+			<div class="timeconbottom" style="height: 1rem;margin:0 auto;margin-top: 0.5rem;">
+				<input class="range-slider" type="hidden" value="0,1440"/>
+				<!--<button id="g2">获取值</button>-->
+			</div>
+		</div>
+	</div>
+</div>

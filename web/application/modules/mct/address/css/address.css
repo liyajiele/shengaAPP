@@ -1,0 +1,45 @@
+.addresszhangxin .add {
+  width: 7.5rem;
+  background: #fff;
+  height: 1rem; }
+  .addresszhangxin .add .addleft {
+    width: 70%;
+    float: left;
+    height: 1rem;
+    line-height: 1rem; }
+    .addresszhangxin .add .addleft span {
+      margin-left: 0.2rem;
+      float: left; }
+    .addresszhangxin .add .addleft input {
+      width: 4rem;
+      float: left;
+      margin-left: 0.1rem;
+      height: 0.5rem;
+      margin-top: 0.25rem; }
+  .addresszhangxin .add .addright {
+    width: 30%;
+    float: right;
+    text-align: center; }
+    .addresszhangxin .add .addright img {
+      width: 0.22rem;
+      height: 0.26rem;
+      margin-right: 0.1rem;
+      float: left;
+      margin-top: 0.4rem;
+      margin-left: 0.4rem; }
+    .addresszhangxin .add .addright span {
+      float: left;
+      height: 100%;
+      line-height: 1rem; }
+.addresszhangxin .anniu {
+  width: 6.8rem;
+  height: 1rem;
+  background: #1C82D4;
+  margin: 0 auto;
+  color: #FFFFFF;
+  border-radius: 4px;
+  margin-left: 0.4rem;
+  margin-top: 0.8rem;
+  font-size: 18px; }
+
+/*# sourceMappingURL=address.css.map */

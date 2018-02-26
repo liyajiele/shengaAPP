@@ -1,0 +1,29 @@
+<section class="content-header">
+    <h1>代理商提现管理</h1>
+</section>
+<section class="content">
+    <div>
+        <div class="shenga-title">
+            <div class="shenga-title-left">
+                <select name="" ng-model="status" style="width: 120px;">
+                    <option value="1">待审核</option>
+                    <option value="2">已拒绝</option>
+                    <option value="3">已通过</option>
+                    <option value="4">转账成功</option>
+                    <option value="5">转账失败</option>
+                </select>
+                <button id="searchStatus" class="btn btn-xs btn-primary" ng-click="search()">查询</button>
+            </div>
+
+        </div>
+
+
+
+        <div style="background: #FFFFFF">
+
+            <table id="draw-table" class="table"></table>
+        </div>
+
+    </div>
+</section>
+

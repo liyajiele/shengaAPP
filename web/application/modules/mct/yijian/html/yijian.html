@@ -1,0 +1,27 @@
+<div class="yijianbigbox">
+    <p>请选择问题类型</p>
+    <ul class="quest">
+        <li ng-click="gou($index)" ng-class="{bian:$index ==chosedIndex}" ng-repeat="x in records">{{x.Name}}
+            <i ng-show="isShow==$index">
+                <img src="images/yijian/gou.png" alt="">
+            </i>
+        </li>
+    </ul>
+    <p>问题和意见</p>
+    <div class="yijian">
+        <div class="yitop">
+            <textarea name="" id="" cols="30" rows="10" maxlength="300" placeholder="请简要描述你的问题和意见，如功能异常，上传页面图片截图更快哦" ng-model="text" ng-change="checkText()"></textarea>
+            <!--<span>0/300</span>-->
+            <p><span ng-bind="zi">0</span>/<span ng-bind="count">300</span></p>
+        </div>
+        <ul class="yiimg">
+            <li class="yiimglist" ><!--ng-repeat="p in yiimglist track by $index"-->
+            	<div class="add">+</div>
+            	<input type="file" id="one-input" accept="image/*" file-model="images" onchange="angular.element(this).scope().img_upload(this.files)" name="file" class="file" />
+                <img ng-src="{{image}}" alt="" />    
+                <!--<div class="del" ng-click="del()">-</div>-->
+            </li>
+        </ul>
+    </div>
+	<div class="btn" ng-click="ti()">提交</div>
+</div>

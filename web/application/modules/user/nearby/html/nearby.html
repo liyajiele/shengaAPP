@@ -1,0 +1,112 @@
+
+<div class="nearbybigbox">
+	<div class="search_header" id="tabs" class="tabs">
+	
+	    <div class="location center" ng-click="toUrl('/user/city')"><span ng-bind="citycity|limitTo:2">上海</span><img src="images/index/1.png"></div>
+	
+	    <div class="search_box" ng-click="toUrl('/user/search')">
+	        <img src="images/index/search.png">
+	        <input class="search_input" type="text" placeholder="可搜索店铺名称">
+	    </div>
+	
+	    <img class="scan_btn" src="images/index/scanBtn.png">
+	    <!--<div class="bg"></div>-->
+	</div>
+	<ul class="tabs nav clear"> 
+		<li ng-repeat="near in type" ng-class="{active:isActive == $index,white:!isActive == $index}" ng-click="changeGood($index)" id="near.id" ng-bind="near.typeName">
+		</li> 
+	</ul>
+	<div class="swiper-container" style="width:7.5rem">
+	    <div class="swiper-wrapper conbox" infinite-scroll='near.nearmerchant(districtid,typeId)' infinite-scroll-disabled='near.merchantBusy' infinite-scroll-distance='1'>
+	        <ul class="swiper-slide seller_list" isActive="0">
+		        <li class="content-slide list_content" ng-repeat="nearmess in near.merchantArray" ng-click="xiang(nearmess.id)" id="w1">
+		            <img class="seller_avatar" ng-src="{{nearmess.mainImage}}">
+                	<div class="seller_infos">
+	                    <div class="seller_name" ng-bind="nearmess.nickname">德克士</div>
+	                    <div class="seller_distence"><span ng-bind="(nearmess.distance/1000).toFixed(0)"></span>km</div>
+	                    <div class="seller_position">
+	                        <img src="images/index/position.png">
+	                        <span>[</span>
+	                        <div ng-bind="nearmess.addr"></div>
+	                        <span>]</span>
+	                    </div>
+	                    <div star rating-value="nearmess.stars" max="max" on-hover="onHover" on-leave="onLeave" readonly="{{readonly}}" class="start"></div>
+	                    <div class="pay_btn">买单</div>
+	                </div>	
+		        </li>
+		    </ul>
+	        <ul class="swiper-slide seller_list" isActive="1">
+		        <li class="content-slide list_content" ng-repeat="nearmess in near.merchantArray" id="w2">
+		            <img class="seller_avatar" ng-src="{{nearmess.mainImage}}">
+                	<div class="seller_infos">
+	                    <div class="seller_name" ng-bind="nearmess.nickname">德克士</div>
+	                    <div class="seller_distence"><span ng-bind="(nearmess.distance/1000).toFixed(0)"></span>km</div>
+	                    <div class="seller_position">
+	                        <img src="images/index/position.png">
+                         	<span>[</span>
+	                        <div ng-bind="nearmess.addr"></div>
+	                        <span>]</span>
+	                    </div>
+	                    <div star rating-value="nearmess.stars" max="max" on-hover="onHover" on-leave="onLeave" readonly="{{readonly}}" class="start"></div>
+	                    <div class="pay_btn">买单</div>
+	                </div>	
+		        </li>
+		    </ul>
+		    <ul class="swiper-slide seller_list" isActive="2">
+		        <li class="content-slide list_content" ng-repeat="nearmess in near.merchantArray" id="w3">
+		            <img class="seller_avatar" ng-src="{{nearmess.mainImage}}">
+                	<div class="seller_infos">
+	                    <div class="seller_name" ng-bind="nearmess.nickname">德克士</div>
+	                    <div class="seller_distence"><span ng-bind="(nearmess.distance/1000).toFixed(0)"></span>km</div>
+	                    <div class="seller_position">
+	                        <img src="images/index/position.png">
+                         	<span>[</span>
+	                        <div ng-bind="nearmess.addr"></div>
+	                        <span>]</span>
+	                    </div>
+	                    <div star rating-value="nearmess.stars" max="max" on-hover="onHover" on-leave="onLeave" readonly="{{readonly}}" class="start"></div>
+	                    <div class="pay_btn">买单</div>
+	                </div>	
+		        </li>
+		    </ul>
+		    <ul class="swiper-slide seller_list" isActive="3">
+		        <li class="content-slide list_content" ng-repeat="nearmess in near.merchantArray" id="w4">
+		            <img class="seller_avatar" ng-src="{{nearmess.mainImage}}">
+                	<div class="seller_infos">
+	                    <div class="seller_name" ng-bind="nearmess.nickname">德克士</div>
+	                    <div class="seller_distence"><span ng-bind="(nearmess.distance/1000).toFixed(0)"></span>km</div>
+	                    <div class="seller_position">
+	                        <img src="images/index/position.png">
+	                        <span>[</span>
+	                        <div ng-bind="nearmess.addr"></div>
+	                        <span>]</span>
+	                    </div>
+	                    <div star rating-value="nearmess.stars" max="max" on-hover="onHover" on-leave="onLeave" readonly="{{readonly}}" class="start"></div>
+	                    <div class="pay_btn">买单</div>
+	                </div>	
+		        </li>
+		    </ul>
+		    <ul class="swiper-slide seller_list" isActive="4">
+		        <li class="content-slide list_content" ng-repeat="nearmess in near.merchantArray" id="w5">
+		            <img class="seller_avatar" ng-src="{{nearmess.mainImage}}">
+                	<div class="seller_infos">
+	                    <div class="seller_name" ng-bind="nearmess.nickname">德克士</div>
+	                    <div class="seller_distence"><span ng-bind="(nearmess.distance/1000).toFixed(0)"></span>km</div>
+	                    <div class="seller_position">
+	                        <img src="images/index/position.png">
+	                        <span>[</span>
+	                        <div ng-bind="nearmess.addr"></div>
+	                        <span>]</span>
+	                    </div>
+	                    <div star rating-value="nearmess.stars" max="max" on-hover="onHover" on-leave="onLeave" readonly="{{readonly}}" class="start"></div>
+	                    <div class="pay_btn">买单</div>
+	                </div>	
+		        </li>
+		    </ul>
+	        
+    	</div>
+  	</div>
+</div>
+<script>
+	
+</script>

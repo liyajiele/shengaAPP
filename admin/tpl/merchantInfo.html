@@ -1,0 +1,157 @@
+<section class="content-header">
+	<h1>商户信息</h1>
+</section>
+<section class="content">
+	<div class="row">
+
+		<div class="box box-default">
+			<div class="box-header with-border">
+				<h3 class="box-title">照片修改</h3>
+				<div class="box-tools pull-right">
+					<button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+				</div><!-- /.box-tools -->
+			</div><!-- /.box-header -->
+			<div class="box-body">
+				<div class="col-lg-3 col-xs-6" ng-repeat="op in infoOpration">
+					<!-- small box -->
+					<div class="small-box bg-aqua" style="height:180px;">
+						<img ng-src="{{op.imag}}" height="100%" width="100%"/>
+					</div>
+					<div align="center" ng-bind="op.name"></div>
+					<button class="btn btn-block btn-danger" ng-click="changeImg(op,$event)">修改照片</button>
+					<input style="display: none"  class="fileUpload"  type="file" name="{{op.name}}" onchange="angular.element(this).scope().fileNameChanged(event)" >
+				</div>
+				<!-- ./col -->
+			</div><!-- /.box-body -->
+		</div>
+
+		<div class="box box-default">
+			<div class="box-header with-border">
+				<h3 class="box-title">基础信息</h3>
+				<div class="box-tools pull-right">
+					<button class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+				</div><!-- /.box-tools -->
+			</div><!-- /.box-header -->
+			<div class="box-body info">
+				<div class="col-lg-6 col-xs-12">
+					<div class="row">
+						<label class="col-lg-3 col-xs-3">商户主：</label>
+						<input type="text" class="col-lg-4 col-xs-4" ng-model="merchant.ownerRealName" ng-readonly="ngreadonly" />
+					</div>
+					<div class="row">
+						<label class="col-lg-3 col-xs-3">用户ID：</label>
+						<input type="text" class="col-lg-4 col-xs-4" ng-model="merchant.uid" ng-readonly="ngreadonly" />
+					</div>
+					<div class="row">
+						<label class="col-lg-3 col-xs-3">身份证号：</label>
+						<input type="text" class="col-lg-4 col-xs-4" ng-model="merchant.ownerIdcard" ng-readonly="ngreadonly"/>
+					</div>
+					<div class="row">
+						<label class="col-lg-3 col-xs-3">店名：</label>
+						<input type="text" class="col-lg-4 col-xs-4" ng-model="merchant.nickname" ng-readonly="ngreadonly"/>
+					</div>
+					<div class="row">
+						<label class="col-lg-3 col-xs-3">地址：</label>
+						<input type="text" class="col-lg-4 col-xs-4" ng-model="merchant.addr" ng-readonly="ngreadonly" />
+					</div>
+
+
+					<div class="row">
+						<label class="col-lg-3 col-xs-3">类型：</label>
+						<span class="col-lg-2 col-xs-2" ng-repeat="t in merchant.types" ng-bind="t.typeName" ng-show="btnShow"></span>
+						<select ng-model="merchant.types" multiple ng-readonly="ngreadonly"  class="col-lg-4 col-xs-4" ng-show="!btnShow" ng-options="type.typeName for type in typeList">
+							<!--<option ng-repeat="type in typeList" value="{{type.id}}"  ng-bind="type.typeName"></option>-->
+						</select>
+						<!--<input type="text" class="col-lg-4 col-xs-4" ng-model="merchant.types" ng-readonly="ngreadonly" />-->
+					</div>
+					<div class="row">
+						<label class="col-lg-3 col-xs-3">电话：</label>
+						<input type="text" class="col-lg-4 col-xs-4" ng-model="merchant.mobile" ng-readonly="ngreadonly"/>
+					</div>
+					<div class="row">
+						<label class="col-lg-3 col-xs-3">营业时间：</label>
+						<input type="text" class="col-lg-4 col-xs-4" ng-model="merchant.shopHours" ng-readonly="ngreadonly" />
+					</div>
+					<div class="row">
+						<label class="col-lg-3 col-xs-3">代理商：</label>
+						<span class="col-lg-4 col-xs-4" ng-bind="agentChange(merchant.agentName)" ng-show="btnShow"></span>
+						<select ng-model="merchant.agentName" ng-options="agent.agentInfo for agent in agentList" ng-readonly="ngreadonly"  class="col-lg-4 col-xs-4" ng-show="!btnShow">
+						<!--	<option ng-repeat="agent in agentList" value="{{agent.account.id}}"  ng-bind="agent.agentInfo"></option>-->
+						</select>
+					</div>
+					<div class="row">
+						<label class="col-lg-3 col-xs-3">注册时间：</label>
+						<input type="text" class="col-lg-4 col-xs-4"
+							   placeholder="例如：2017-09-08" ng-model="merchant.createTime" ng-readonly="ngreadonly" />
+					</div>
+					<div class="row">
+						<label class="col-lg-3 col-xs-3">人均消费：</label>
+						<input type="text" class="col-lg-4 col-xs-4"
+							   placeholder="例如：120" ng-model="merchant.consumerption" ng-readonly="ngreadonly" />
+					</div>
+					<div class="row">
+						<label class="col-lg-3 col-xs-3">让利百分比：</label>
+						<input type="text" class="col-lg-4 col-xs-4"
+							   placeholder="例如：0.2" ng-model="merchant.profits"  ng-readonly="ngreadonly" />
+					</div>
+					<div class="row">
+						<label class="col-lg-3 col-xs-3">返利类型：</label>
+						<span class="col-lg-4 col-xs-4" ng-bind="rebateType(merchant.rebateType)" ng-show="btnShow"></span>
+						<select ng-model="merchant.rebateType" ng-readonly="ngreadonly"  class="col-lg-4 col-xs-4" ng-show="!btnShow">
+							<option value="1">全部返利</option>
+							<option value="2">部分返利</option>
+						</select>
+					</div>
+					<div class="row">
+						<label class="col-lg-3 col-xs-3">营业执照类型：</label>
+						<span class="col-lg-4 col-xs-4" ng-bind="licenceType(merchant.licenceType)" ng-show="btnShow"></span>
+						<select ng-model="merchant.licenceType"ng-readonly="ngreadonly"  class="col-lg-4 col-xs-4" ng-show="!btnShow">
+							<option value="1">企业法人</option>
+							<option value="2">个体工商</option>
+						</select>
+					</div>
+
+					<div class="row">
+						<label class="col-lg-3 col-xs-3">营业执照：</label>
+						<span class="col-lg-4 col-xs-4" ng-bind="licenceStatus(merchant.licenceStatus)" ng-show="btnShow"></span>
+						<select ng-model="merchant.licenceStatus" readonly="{{ngreadonly}}" class="col-lg-4 col-xs-4" ng-show="!btnShow">
+							<option value="1">已经办理</option>
+							<option value="2">暂无法提供</option>
+						</select>
+					</div>
+
+					<button class="btn btn-danger"  ng-click="modifyInformation()" ng-if="btnShow">修改</button>
+					<button class="btn btn-danger"  ng-click="confirm()" ng-if="!btnShow">确认</button>
+					<button class="btn btn-danger"  ng-click="cancel()" ng-if="!btnShow">取消</button>
+				</div>
+				<div class="col-lg-6 col-xs-12">
+					<div class="row">
+						<div class="col-lg-12">
+							<!-- 地址输入框 -->
+							<div class="form-group">
+								<label class="control-label">经度：</label>
+								<input id="longitude" name="address"  ng-model="mapOpts.center.longitude"/>
+								<label  class="control-label">维度：</label>
+								<input id="latitude" class="" name="address" ng-model="mapOpts.center.latitude"/>
+								<button class="btn btn-primary" ng-click="initLat()">还原初始值</button>
+							</div>
+							<!-- 百度地图显示区域 -->
+							<div id="map" style="height:400px;"
+								 ui-baidu-map="mymarker"
+								 map-event="{'map-click': 'onMapClick($event, $params)', 'map-loaded': 'onMapLoaded($event, $params)'}"
+								 map-options="mapOpts">
+							</div>
+							<!--<baidu-map  ui-baidu-map="myMap" map-options="mapOptions" style="height: 400px;width: 100%;display: block" click="getCoord(e)"></baidu-map>-->
+						</div>
+					</div>
+
+				</div>
+				<!-- ./col -->
+			</div><!-- /.box-body -->
+		</div>
+
+		<button class="btn btn-success" ng-click="subInformation()">提交</button>
+		<!-- ./col -->
+	</div>
+</section>
+

@@ -1,0 +1,21 @@
+<div class="contactsbigbox">
+    <div class="conbottom">
+        <div class="conzhi" infinite-scroll='child.child(mid)' infinite-scroll-disabled='child.childBusy' infinite-scroll-distance='1'>
+            <div class="zhilist" ng-repeat="zi in child.childArray">
+                <div class="zhiimg">
+                    <img ng-src="{{zi.avatar}}" alt="">
+                </div>
+                <div class="zhimess">
+                    <p><i ng-bind="zi.nickname"></i> <span ng-bind="zi.createTime|date:'yyyy-MM-dd'"></span></p>
+                    <div class="message">
+                    	<div class="mess">
+                    		<span>ID:</span><i ng-bind="zi.id"></i>
+                    	</div>
+                    	
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="backImg"></div>
+<form role="form" class="loginForm">
+
+    <div class="form-group">
+        <label for="name">用户名</label>
+        <input type="text" class="form-control" id="name" ng-model="username"
+               placeholder="请输入您的账号">
+    </div>
+
+    <div class="form-group">
+        <label for="name">手机号</label>
+        <input type="text" class="form-control" id="phone"
+               placeholder="请输入您的手机号">
+    </div>
+
+    <div class="form-group">
+        <label for="name" style="display: block">验证码</label>
+        <input type="text" class="form-control" style="width: 180px !important;display: inline-block;" id="val" ng-model="code"
+               placeholder="验证码">
+        <button type="button" class="btn btn-primary"  style="margin-top: -4px;" ng-click="validCode()">发送验证码</button>
+    </div>
+
+    <div class="form-group">
+        <label for="psw">新密码</label>
+        <input type="password" id="psw"  class="form-control"  placeholder="请输入您的密码"    ng-model="newPassword">
+
+    </div>
+    <button type="button" class="btn btn-block btn-primary login"  ng-click="changePsd()">确认</button>
+
+</form>

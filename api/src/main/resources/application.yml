@@ -1,0 +1,75 @@
+server.port: 8999
+spring:
+    datasource:
+#      druid:
+#        write:
+#          url: jdbc:mysql://wx.maweihe.com/nc?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+#          username: root
+#          password: W8023w1314
+#          driver-class: com.mysql.jdbc.Driver
+#        read:
+#          url: jdbc:mysql://wx.maweihe.com/nc?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+#          username: root
+#          password: W8023w1314
+#          driver-class: com.mysql.jdbc.Driver
+
+
+
+        name: sha
+        url: jdbc:mysql://rm-uf6286wju4i84ab97o.mysql.rds.aliyuncs.com/sha?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+        username: sxp
+        password: W8023w1314
+        #driud
+        type: com.alibaba.druid.pool.DruidDataSource
+        filters: stat
+        maxActive: 100
+        initialSize: 1
+        maxWait: 60000
+        minIdle: 1
+        timeBetweenEvictionRunsMillis: 60000
+        minEvictableIdleTimeMillis: 300000
+        validationQuery: select 'x'
+        testWhileIdle: true
+        testOnBorrow: false
+        testOnReturn: false
+        poolPreparedStatements: true
+        maxOpenPreparedStatements: 20
+        maxPoolPreparedStatementPerConnectionSize: 20
+
+    jpa:
+      database: mysql
+      show-sql: false
+      generate-ddl: true
+      #wr
+#      database-platform: org.hibernate.dialect.MySQL5Dialect
+      hibernate:
+        ddl-auto: update
+        dialect: org.hibernate.dialect.MySQL5Dialect
+        # wr 通过方法名解析sql的策略
+#        naming-strategy: org.hibernate.cfg.DefaultComponentSafeNamingStrategy
+        show-sql: false
+    redis:
+      database: 0
+#      host:  r-uf6e6b2ec8e7c5c4.redis.rds.aliyuncs.com
+      host: r-bp145cdcfcfd33f4.redis.rds.aliyuncs.com
+      port: 6379
+      password: W8023w1314
+      pool:
+        max-active: 600
+        max-wait: -1
+        max-idle: 8
+        min-idle: 0
+      timeout: 0
+
+
+logging:
+  level:
+    root: info
+management:
+  security:
+    enabled: false
+
+
+sa:
+  reidsUsePool: true
+  redisTestOnBorrow: true

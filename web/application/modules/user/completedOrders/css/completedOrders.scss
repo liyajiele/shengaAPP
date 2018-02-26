@@ -1,0 +1,129 @@
+
+.completedbigbox{
+  width: 7.5rem;
+  height:100%;
+  background: #f0f0f0;
+  overflow: scroll;
+  font-size:0.26rem;
+  color:#353535 ;
+  
+
+  .list_content{
+    width: 100%;
+    height: 100%;
+
+
+    li{
+      float:left;
+      background:#fff;
+      width:100%;
+      heigth:2.58rem;
+      margin-bottom:0.1rem;
+
+      .seller_avatar{
+        width:2rem;
+        height:2rem;
+        margin-top:.2rem;
+        margin-bottom:0.2rem;
+        float: left;
+      }
+
+      .seller_infos{
+        width:5.25rem;
+        height:2rem;
+        margin-left:.25rem;
+        margin-top:.2rem;
+        margin-bottom:0.2rem;
+        float: left;
+
+        .seller_name{
+          color:#353535;
+          font-size:.34rem;
+          width:3.5rem;
+          line-height:.34rem;
+          overflow: hidden;
+          float: left;
+        }
+        .seller_distence{
+          width:1.75rem;
+          font-size:.28rem;
+          color:#888888;
+          float: left;
+        }
+        .seller_position{
+            color:#a9a9a9;
+            width:100%;
+            height:.32rem;
+            margin-top:.2rem;
+            float: left;
+            line-height: 0.32rem;
+              img{
+                width:.23rem;
+                height:.3rem;
+                float: left;
+                margin-right: 0.1rem;
+              }
+              span{
+                 float: left;
+                font-size: 0.28rem;
+              }
+              div{
+                font-size:.28rem;
+                color:#888888;
+                height:.32rem;
+                line-height:.32rem;
+                overflow: hidden;
+                float: left;
+              }
+          }
+        .time{
+          margin-top: 0.3rem;
+          float: left;
+          width: 100%;
+          color: #888;
+          float: left;
+        }
+        .money{
+          margin-top: 0.2rem;
+          float: left;
+          width: 50%;
+          color: #888;
+          float: left;
+          span{
+            color: red;
+          }
+        }
+        .fanmoney{
+          margin-top: 0.2rem;
+          float: left;
+          width: 50%;
+          color: #888;
+          float: left;
+          span{
+            color: #22c01a;
+          }
+        }
+      }
+    }
+  }
+  .bei{
+    height: 2.5rem;
+    position: fixed;
+    top: 3.48rem;
+    left: 2.94rem;
+    display: none;
+
+    img{
+      width: 1.62rem;
+      height: 1.92rem;
+      margin: 0 auto;
+    }
+
+    p{
+      text-align: center;
+      font-size: 0.26rem;
+      color: #888;
+      margin-top: 0.1rem;
+    }
+  }
+}

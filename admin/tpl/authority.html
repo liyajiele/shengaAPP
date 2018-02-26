@@ -1,0 +1,92 @@
+<section class="content-header">
+    <h1>权限管理</h1>
+</section>
+<section class="content">
+    <div ng-show="!modifyInfoShow">
+        <div class="shenga-title">
+            <span class="shenga-title-left">权限人员</span>
+            <div class="shenga-title-right">
+                <button id="addBanner" class="btn btn-xs btn-default" ng-click="addMember()">人员新增</button>
+                <button  class="btn btn-xs btn-primary" style="background: #2692FF" ng-click="roleMange()">角色管理</button>
+                <button  class="btn btn-xs btn-primary" ng-click="resourceMange()">资源管理</button>
+            </div>
+        </div>
+       <div style="background: #fff">
+           <table id="advertise-table" class="table"></table>
+       </div>
+       <!-- <div class="col-xs-12">
+           &lt;!&ndash; <div class="box">
+                <div class="box-body">
+                    <div id="toolbar">
+                        <button id="addBanner" class="btn btn-xs btn-default" ng-click="addMember()">
+                            <i class="glyphicon glyphicon-plus"></i> 人员新增
+                        </button>
+                        <button  class="btn btn-xs btn-primary" style="background: #2692FF" ng-click="roleMange()">
+                            <i class="glyphicon glyphicon-plus"></i> 角色管理
+                        </button>
+                        <button  class="btn btn-xs btn-primary" ng-click="resourceMange()">
+                            <i class="glyphicon glyphicon-plus"></i> 资源管理
+                        </button>
+                    </div>&ndash;&gt;
+                    <table id="advertise-table" class="table table-bordered table-striped table-responsive"></table>
+                </div>
+
+            </div>
+        </div>
+    </div>-->
+</section>
+<div id="Addauthority" style="display: none;padding: 10px">
+    <div><label>账户:</label><input  ng-model="author.username"  type="text" ></div>
+    <div><label>密码:</label><input  ng-model="author.password"  type="text" ></div>
+    <div><label>用户ID:</label><input  ng-model="author.uid"  type="text" ></div>
+    <div><label>角色描述:</label><input  ng-model="author.description"  type="text"></div>
+    <div class="role">
+        <label ng-repeat="l in roleList" ng-click="isCheck()"><input type="checkbox" data-id="{{l.id}}" data-description="{{l.description}}"/>{{l.description}}</label>
+    </div>
+</div>
+
+<div id="AddRole" style="display: none;padding: 10px">
+    <div><label>角色名称:</label><input  ng-model="role.role"  type="text" ></div>
+    <div><label>角色描述:</label><input  ng-model="role.description"  type="text" ></div>
+    <div><label>优先级:</label><input  ng-model="role.priority"  type="text" ></div>
+</div>
+<div id="roleMange" style="display: none;padding: 10px">
+    <ul class="list-group">
+        <li class="list-group-item" ng-repeat="r in roleList"><span ng-bind="r.description"></span><span class="op pull-right btn btn-primary" ng-click="resourceOfrole(r.id)">资源</span><span class="op pull-right btn btn-success" ng-click="modifyRole(r,$index)">更改</span><span class="op btn pull-right btn-danger" ng-click="delRole(r.id,$index)">删除</span></li>
+    </ul>
+    <button class="btn btn-xs btn-success" ng-click="addRole()">新增角色</button>
+</div>
+<div id="resourceMange" style="display: none;padding: 10px">
+    <ul class="list-group">
+        <li class="list-group-item" ng-repeat="r in resourceList"><span ng-bind="r.resourceName"></span><span class="op pull-right btn btn-success" ng-click="modifyResource(r,$index)">更改</span><span class="op btn pull-right btn-danger" ng-click="delResource(r.id,$index)">删除</span></li>
+    </ul>
+    <button class="btn btn-xs btn-success" ng-click="addResource()">新增资源</button>
+</div>
+
+<div id="resourceListOfRole" style="display: none;padding: 10px">
+    <ul class="list-group">
+        <li class="list-group-item" ng-repeat="r in resourceListOfRole"><span ng-bind="r.resourceName"></span><span class="op btn pull-right btn-danger" ng-click="delResourceForRole(r.id,$index)">删除</span></li>
+    </ul>
+    <label>全部资源</label>
+    <select ng-model="selectOption" ng-options="r.resourceName for r in resourceList">
+      </select>
+    <button class="btn btn-xs btn-success" ng-click="addResourceForRole()">添加</button>
+</div>
+
+
+
+<div id="AddResource" style="display: none;padding: 10px">
+    <div><label>资源名:</label><input  ng-model="resource.resourceName"  type="text" ></div>
+    <div><label>资源字符串:</label><input  ng-model="resource.permission"  type="text" ></div>
+    <div><label>url:</label><input  ng-model="resource.url"  type="text" ></div>
+    <div><label>父资源id:</label><input  ng-model="resource.parentResourceId"  type="text" ></div>
+    <div><label>优先级:</label><input  ng-model="resource.priority"  type="text" ></div>
+
+</div>
+<div id="roleList" style="display: none;padding: 10px">
+    <div class="role">
+        <label ng-repeat="l in roleList" ng-click="changeUserRole($event,l)"><input type="checkbox" ng-checked="l.isChecked"/>{{l.description}}</label>
+       <!-- <button class="btn btn-xs btn-success" ng-click="addRole()">新增角色</button>-->
+    </div>
+</div>
+

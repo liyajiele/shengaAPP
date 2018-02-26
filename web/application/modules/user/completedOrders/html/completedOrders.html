@@ -1,0 +1,25 @@
+<div class="completedbigbox" infinite-scroll='finish.finish(uid)' infinite-scroll-disabled='finish.finishBusy' infinite-scroll-distance='1' >
+    <ul class="list_content">
+        <li ng-repeat="finish in finish.finishArray" ng-click="xiang(finish.merchant.id)">
+            <img class="seller_avatar" ng-src="{{finish.merchant.mainImage}}" />
+            <div class="seller_infos">
+                <div class="seller_name" ng-bind="finish.merchant.nickname"></div>
+                <!--<p class="seller_distence"> <span  ng-bind="finmcthant.distance"></span>km</p>-->
+                <div class="seller_position">
+                    <img src="images/index/position.png" />
+                    <span>[</span>
+                    <div ng-bind="finish.merchant.addr"></div>
+                    <span>]</span>
+                </div>
+                <p class="time">消费时间：<span ng-bind="finish.merchant.createTime|date:'yyyy-MM-dd HH:mm'"></span></p>
+                <p class="money">消费金额：<span>￥</span><span ng-bind="finish.totalAmount"></span></p>
+                <p class="fanmoney">返利金额：<span>￥</span><span ng-bind="finish.rebate.toFixed(2)"></span></p>
+            </div>
+        </li>
+    </ul>
+    
+    <div class="bei">
+        <img src="images/money/no.png" alt="">
+        <p>暂无评价订单</p>
+    </div>
+</div>

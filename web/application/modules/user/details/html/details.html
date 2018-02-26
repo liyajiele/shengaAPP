@@ -1,0 +1,80 @@
+<div class="detailsbigbox">
+    <div class="detailstop">
+        <div class="detailsimg">
+            <img ng-src="{{details.mainImage}}" alt="">
+        </div>
+        <div class="detailsmess">
+            <div class="detailsmt">
+                <span ng-bind="details.nickname"></span>
+                <div class="detailscang"  ng-click="display()" ng-class="{'active':xuan==true}">
+                	<img src="images/collect/collectb.png" alt="" class="fff" ng-show="xuan==false">
+                    <img src="images/collect/collect.png" alt="" class="red" ng-show="xuan==true">
+                </div>
+            </div>
+            <div class="codestar">
+                <div star rating-value="detailsstars" max="max" on-hover="onHover" on-leave="onLeave" readonly="{{readonly}}" class="start"></div>
+            </div>
+            <div class="detailsbott">
+                <p>人均 <span ng-bind="details.consumerption"></span>元</p>
+                <div class="detailspay" ng-click="fukuan()" >买单</div>
+            </div>
+        </div>
+    </div>
+    <div class="detailsmi">
+        <p>营业时间：<span ng-bind="details.shopHours"></span></p>
+        <div class="detailsadd">
+            <div class="detailsloc"><img src="images/index/loc.png" alt=""></div>
+            <span class="detailadds" ng-bind="details.addr"></span>
+            <span><i ng-bind="details.distance/1000|limitTo:5"></i>km</span>
+            <div class="detailsphone" ng-click="callPhone(details.mobile)"><img src="images/index/phone.png" alt=""></div>
+        </div>
+    </div>
+    <!--网友打分-->
+    <div class="bigboxa" infinite-scroll='commonslist.commonslist(mid)' infinite-scroll-disabled='commonslist.commonslistBusy' infinite-scroll-distance='1'>
+	    <div class="code_header" ng-click="dafen(details.id)">
+	        <div class="dafen"><span>网友打分</span><span>(</span> <span ng-bind="details.commentNum" style="margin-left: -0.05rem;"></span><span>)</span></div>
+	        <div class="codeimg" ><img src="images/index/rightarrows.png" alt=""></div>
+	    </div>
+	    <div class="code_listbox">
+	        <div class="code_list" ng-repeat="commonslist in commonslist.commonslistArray">
+	            <div class="codephoto"><img ng-src="{{commonslist.avatar}}" alt=""></div>
+	            <div class="codemessage">
+	                <div class="codemesstop">
+	                    <p class="codemt" ng-bind="commonslist.nickname"></p>
+	                    <p class="codemtr" ng-bind="dt"></p>
+	                </div>
+	                <div class="codecode">
+	                    <span>打分</span>
+	                    <div star rating-value="commonslist.stars" max="max" on-hover="onHover" on-leave="onLeave" readonly="{{readonly}}" class="start"></div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<!--网友打分-->
+    
+    <div class="seller_list">
+        <div class="list_header">
+            <span class="like_tip">推荐商家</span>
+        </div>
+        <div class="list_contents">
+            <ul class="list_content">
+                <li ng-click="tuijian(tui.id)" ng-repeat="tui in details.recommonds">
+                    <img class="seller_avatar" ng-src="{{tui.mainImage}}" />
+                    <div class="seller_infos">
+                        <div class="seller_name" ng-bind="tui.nickname"></div>
+                        <div class="seller_distence"><span ng-bind="tui.distance/1000|limitTo:5"></span>km</div>
+                        <div class="seller_position">
+                            <img src="images/index/position.png" />
+                            <span>[</span>
+                            <div ng-bind="tui.addr"></div>
+                            <span>]</span>
+                        </div>
+                        <div star rating-value="tui.stars" max="max" on-hover="onHover" on-leave="onLeave" readonly="{{readonly}}" class="start"></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+

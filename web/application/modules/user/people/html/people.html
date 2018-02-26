@@ -1,0 +1,106 @@
+
+<div class="peoplebigbox">
+    <div class="boxheader">
+        <div class="headertop">
+            <div class="phone">
+                <img ng-src="{{aboutInfo.avatar}}" alt="">
+            </div>
+            <div class="message">
+                <h1 ng-bind="aboutInfo.nickname"></h1>
+                <p>省啊ID: <span ng-bind="aboutInfo.id"></span></p>
+                <p>邀请码: <span ng-bind="codema"></span></p>
+            </div>
+            <div class="ma" ng-click="toUrl('/user/generalize')"> 
+            	<img src="images/people/ma.jpg" alt="" />
+            </div>
+            <!--<div class="rightarrows">
+                <img src="images/index/rightArrows.png" alt="">
+            </div>-->
+        </div>
+        <ul class="headerbottom">
+            <li ng-click="toUrl('/user/contacts')"><i><img src="images/people/ren.png" alt=""></i>人脉</li>
+            <li ng-click="duiba()"><i><img src="images/people/ji.png" alt=""></i>积分</li>
+            <li ng-click="toUrl('/user/collect')"><i><img src="images/people/shou.png" alt=""></i>收藏 (<span ng-bind="collectnums"></span>)</li>
+        </ul>
+    </div>
+
+    <div class="mydan">
+        <div class="dantop" ng-click="toUrl('/user/completedOrders')">
+            我的订单
+            <i ><img src="images/index/rightarrows.png" alt=""></i>
+        </div>
+        <ul class="headerbottom">
+            <li ng-click="toUrl('/user/completedOrders')"><i><img src="images/people/yi.png" alt=""></i>已完成</li>
+            <li ng-click="toUrl('/user/unassess')"><i><img src="images/people/dai.png" alt=""></i>待评价(<span ng-bind="unnum"></span>)</li>
+            <li ng-click="toUrl('/user/fanli')"><i><img src="images/people/fan.png" alt=""></i>返利订单</li>
+        </ul>
+    </div>
+
+    <div class="jilu">
+        <div class="list" ng-click="toUrl('/user/payti')">
+            <i class="qian">
+                <img src="images/people/yu.png" alt="">
+            </i>
+            <span class="yu">余额提现</span>
+            <i class="rightarrows" >
+                <img src="images/index/rightarrows.png" alt="">
+            </i>
+            <p class="money">
+            	<span  ng-bind="money.toFixed(2)"></span>
+            	<span>元</span>
+            </p>
+
+            
+        </div>
+        <div class="list" ng-click="toUrl('/user/finance')">
+            <i class="qian">
+                <img src="images/people/cai.png" alt="">
+            </i>
+            财务记录
+            <!--<span>999.9元</span>-->
+            <i class="rightarrows" >
+                <img src="images/index/rightarrows.png" alt="">
+            </i>
+        </div>
+    </div>
+
+    <div class="jilu">
+        <div class="list">
+        	<a href="tel:021-34792118" style="display: block;
+    width: 100%;
+    height: 100%;
+    color: #353535;">
+	            <i class="qian">
+	                <img src="images/people/kefu.png" alt="">
+	            </i>
+	            <span class="yu">客服</span>
+	            <!--<span class="money">999.9元</span>-->
+	            <!--<i class="rightarrows">
+	            	<a href="tel:021-34792118">
+	                	<img src="images/index/rightarrows.png" alt="">
+	            	</a>
+	            </i>-->
+            </a>   
+        </div>
+        <div class="list" ng-click="toUrl('/user/yijian')">
+            <i class="qian">
+                <img src="images/people/yijian.png" alt="">
+            </i>
+            意见反馈
+            <!--<span>999.9元</span>-->
+            <i class="rightarrows">
+                <img src="images/index/rightarrows.png" alt="">
+            </i>
+        </div>
+        <div class="list" ng-click="toUrl('/user/aboutour')">
+            <i class="qian">
+                <img src="images/people/aboutour.png" alt="">
+            </i>
+            关于我们
+            <!--<span>999.9元</span>-->
+            <i class="rightarrows">
+                <img src="images/index/rightarrows.png" alt="">
+            </i>
+        </div>
+    </div>
+</div>

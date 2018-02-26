@@ -1,0 +1,30 @@
+html,body{
+    background: #F0F0F0;
+//  min-height: 20rem;
+}
+*{
+    padding:0px;
+    margin:0px;
+    border:0px;
+    text-decoration:none;
+//  font-family:Tahoma,'微软雅黑',Verdana,Arial,Helvetica,sans-serif;
+    list-style:none;
+}
+a,button{cursor:pointer}
+table{ border-collapse: collapse;border-spacing: 0;}
+a img{ border:none 0;}
+h1,h2,h3,h4,h5,h6,em,strong,b{font-weight:normal;}
+.left { float:left; display:inline; }
+.right { float:right; display:inline; }
+.clear:after { display:block; content:''; clear:both; }
+.clear { zoom:1; clear:both; }
+
+.spreadwamfujin{
+    margin: 0 0;
+    width: 7.5rem;
+    height: auto;
+    img{
+        width: 100%;
+    }
+}
+

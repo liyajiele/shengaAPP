@@ -1,0 +1,23 @@
+<div class="loginma">
+    <div class="login_tp">
+        <img src="../web/images/login/login.png" alt="" />
+    </div>
+    <div class="login_main">
+        <div class="username_group register_input_group ">
+            <span>手机号</span>
+            <input class="register_username_input" type="text" ng-model="mobile" placeholder="请输入您注册时的手机号" />
+        </div>
+        <div class="code_group register_input_group ">
+            <span>验证码</span>
+            <input type="text" style="width: 2.6rem;" ng-model="code" placeholder="请输入4位验证码" />
+            <h4>发送验证码</h4>
+        </div>
+        <div class="password_group register_input_group ">
+            <span style="margin-right: 0.7rem">密码</span>
+            <input type="password" ng-model="newPassword" placeholder="请输入您的新密码" />
+        </div>
+    </div>
+    <div class="login_btn center " tapmode=""  ng-click="login()">
+        重新登录
+    </div>
+</div>

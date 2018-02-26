@@ -1,0 +1,161 @@
+
+<div id="allmap"></div>
+<div class="index_content">
+    <div class="search_header">
+
+        <div class="location center" ng-click="city()" ng-class="{'active1':xuan==true}"><span ng-bind="citycity|limitTo:2"></span><img src="images/index/xiala.png"></div>
+
+        <div class="search_box" ng-click="toUrl('/user/search')">
+            <img src="images/index/search.png" />
+            
+            <input class="search_input" type="text" placeholder="可搜索店铺名称"/>
+        </div>
+
+        <!--<img class="scan_btn" src="images/index/scanBtn.png">-->
+        <!--<div class="bg"></div>-->
+    </div>
+    <div class="banner">
+        	<ul class="imgbox">
+				<li class="list active" ng-repeat="image in aboutInfo"><img ng-src="{{image.image}}" alt="" /></li>
+           </ul>
+    </div>
+
+
+    <div class="citybox" ng-show="xuan==true">
+		<div class="city">
+			<div class="citytop">
+				<div class="citytopleft">
+					<i>当前城市</i>
+					<span ng-bind="citycity"></span>
+				</div>
+				<div class="citytopright" ng-click="toUrl('/user/city')">切换城市>></div>
+			</div>
+			<ul class="citybottom">
+				<li ng-repeat="city in cityId" ng-click="diancity($index)" ng-bind="city.name|limitTo:5"></li>
+			</ul>
+		</div>
+	</div>
+    <ul class="main_menu">
+        <li>
+        	<a href="#/user/nearby?isActive=0" >
+	            <img src="images/index/menuEat.png">
+	            <span>吃</span>
+            </a>
+        </li>
+        <li>
+        	<a href="#/user/nearby?isActive=0">
+	            <img src="images/index/menuDrike.png">
+	            <span>喝</span>
+            </a>
+        </li>
+        <li>
+        	<a href="#/user/nearby?isActive=3" >
+	            <img src="images/index/menuBuy.png">
+	            <span>购</span>
+            </a>
+        </li>
+        <li>
+        	<a href="#/user/nearby?isActive=2" >
+	            <img src="images/index/menuPlay.png">
+	            <span>玩</span>
+            </a>
+        </li>
+        <li>
+        	<a href="#/user/nearby?isActive=2" >
+	            <img src="images/index/menuHappy.png">
+	            <span>乐</span>
+            </a>
+        </li>
+        <!--<li ng-click="toUrl()">
+            <img src="images/index/menuRecharge.png">
+            <span>手机充值</span>
+        </li>-->
+    </ul>
+
+    <div class="actions">
+        <div class="toutiao" ng-click="toUrl('/user/tou')">
+            <div class="touleft"><img src="images/index/tou.png" alt="" /></div>
+            <i></i>
+            <div class="toum">
+                <div class="fan">返利</div>
+                <ul class="get" infinite-scroll='tou.new()' infinite-scroll-disabled='tou.newBusy' infinite-scroll-distance='1'>               	
+                	<slide-follow id="slide" dataset-data = "datasetData"></slide-follow>
+                </ul>
+            </div>
+            <div class="touright" ><img src="images/index/rightarrows.png" alt=""></div>
+        </div>
+        <ul class="fourdiv">
+            <li ng-click="toUrl('/user/noyao')">
+                <img src="images/index/menuMoney.png" alt="">
+                <span>抢红包</span>
+            </li>
+            <li ng-click="duiba()">
+                <img src="images/index/menuGift.png" alt="">
+                <span>好礼兑换</span>
+            </li>
+            <li ng-click="toUrl('/user/gong')">
+                <img src="images/index/menuStrategy.png" alt="">
+                <span>省啊攻略</span>
+            </li>
+            <li ng-click="cai()">
+                <img src="images/index/menuActive.png" alt="">
+                <span>精彩活动</span>
+            </li>
+        </ul>
+    </div>
+
+    <div class="sellerl">
+        <div class="listh">
+            <span class="like_tip">猜你喜欢</span>
+            <div class="change_list_btn" ng-click="huan()">
+                <span>换一批</span><img src="images/index/changeListBtn.png" />
+            </div>
+        </div>
+        
+        <div class="list_contents" infinite-scroll='merchant.nearmerchant(districtid)' infinite-scroll-disabled='merchant.merchantBusy' infinite-scroll-distance='1'>
+        	<ul class="list_content">
+	            <li ng-click="xiang(merchant.id)" ng-repeat="merchant in merchant.merchantArray">
+	                <img class="seller_avatar" ng-src="{{merchant.mainImage}}" />
+	                <div class="seller_infos">
+	                    <div class="seller_name" ng-bind="merchant.nickname"></div>
+	                    <div class="seller_distence"><span ng-bind="(merchant.distance/1000).toFixed(0)"></span>km</div>
+	                    <div class="seller_position">
+	                        <img src="images/index/position.png" /><span>[</span><div ng-bind="merchant.addr"></div><span>]</span>
+	                    </div>
+                    	<div star rating-value="merchant.stars" max="max" on-hover="onHover" on-leave="onLeave" readonly="{{readonly}}" class="start"></div>
+	                    <div class="pay_btn" ng-click="toUrl('/user/pay')">
+	                        买单
+	                    </div>
+	                </div>
+	            </li>
+        	</ul>
+        </div>
+        
+
+        
+    </div>
+</div>
+<script>
+	//大轮播   自动轮播
+	var imgbox=$(".imgbox")[0];
+	var imgss=$("li",imgbox);
+	var width=parseInt(getStyle(imgss[0],"width"));
+	var t=setInterval(move,4000);
+	var flag=true;
+
+	function move(){
+		animate(imgbox,{left:-width},500,function(){   //自动走，盒子向左移
+			var first=getFirst(imgbox);   //获取盒子的第一个元素
+			imgbox.appendChild(first);    //追加，插入到最后
+			imgbox.style.left=0;       //把盒子拉回来
+			flag=true;
+		})
+	}
+    imgbox.onmouseover=function(){
+        clearInterval(t);
+    }
+    imgbox.onmouseout=function(){
+    	t=setInterval(move,3000)
+    }
+
+</script>

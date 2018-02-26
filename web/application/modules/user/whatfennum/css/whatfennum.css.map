@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,UAAU;EACN,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,MAAM;EAEb,cAAG;IACC,KAAK,EAAE,IAAI;IACX,MAAM,EAAE,IAAI;IACZ,OAAO,EAAE,CAAC;IACV,MAAM,EAAE,CAAC;IACT,OAAO,EAAE,KAAK",
+"sources": ["whatfennum.scss"],
+"names": [],
+"file": "whatfennum.css"
+}

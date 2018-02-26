@@ -1,0 +1,263 @@
+body{
+    font-family: 微软雅黑;
+}
+.btn.focus, .btn:focus, .btn:hover {
+  color: #FFFFFF !important;
+  text-decoration: none;
+}
+.past-button{
+  width:90px;
+/*  height:30px;*/
+  outline: none !important;
+  /*color: #70BFFF;*/
+    color: #FFFFFF;
+  font-size:14px;
+    padding: 4px;
+ /*   margin-right: 15px;*/
+    cursor: pointer;
+   /* display: block;*/
+/*  font-family:PingFang-SC-Regular;*/
+  background:rgba(112,191,255,1);
+  border-radius: 15px ;
+}
+.refuse-button{
+  width:90px;
+/*  height:30px;*/
+    outline: none !important;
+    color: #FFFFFF;
+    padding: 4px;
+ /* color: #FF7877;
+    cursor: pointer;*/
+  font-size:14px;
+  /*font-family:PingFang-SC-Regular;*/
+  background:rgba(255,120,119,1);
+  margin-top: 8px;
+  border-radius: 15px ;
+}
+
+.shenga-title{
+    background: #222C3C ;
+   padding:10px 20px;
+    overflow:hidden ;
+}
+.shenga-title-left{
+    color: #FFFFFF;
+    font-size:20px;
+    display: inline-block;
+
+}
+.shenga-title-left select{
+    color:#333333;
+    font-size: 14px;
+}
+.shenga-title-right{
+    float: right;
+
+}
+
+/*table*/
+.fixed-table-toolbar .search{
+    margin-right: 20px;
+
+}
+.fixed-table-toolbar .search input{
+    border-radius: 2px;
+    height: 30px;
+}
+.table>thead>tr>th,.table>tbody>tr>td{
+    border-left: none;
+}
+.bootstrap-table .fixed-table-container{
+    border: none;
+    border-radius: 0;
+}
+#roleMange .op,#resourceMange .op,#resourceListOfRole .op{
+  margin-left:5px;
+  padding: 1px;
+}
+.accountyellow{
+  background:#FEF4DC url('../img/totalMoney.png') no-repeat;
+    background-clip: border-box;
+    background-size: 100% 100%;
+}
+.accountblue{
+  background:#DBF6EA url('../img/withdrawalMoney.png') no-repeat;
+    background-clip: border-box;
+    background-size: 100% 100%;
+}
+.accountred{
+  background:#FDE2E4 url('../img/money.png') no-repeat;
+    background-clip: border-box;
+    background-size: 100% 100%;
+}
+/*.account .col-sm-12{
+    background-clip: border-box;
+    background-size: 100% 100%;
+}*/
+/*.account .col-sm-12 .accountyellow{
+    background-clip: border-box;
+    background-size: 100% 100%;
+    background:#FEF4DC url('../img/bigTotalMoney.png') no-repeat;
+}
+.account .col-sm-12 .accountblue{
+    background-clip: border-box;
+    background-size: 100% 100%;
+    background:#FEF4DC url('../img/bigWithdrawalMoney.png') no-repeat;
+}
+.account .col-sm-12 .accountred{
+    background-clip: border-box;
+    background-size: 100% 100%;
+    background:#FEF4DC url('../img/bigMoney.png') no-repeat;
+}*/
+.account .col-lg-4{
+    background-clip:content-box;
+}
+.accountNum{
+  font-size:30px;
+  font-weight: 600;
+  height: 50px;
+  line-height: 50px;
+}
+#addAdvertise .form-group{
+    margin-left:0;
+    margin-right: 0;
+}
+#addAdvertise label{
+    min-width: 70px;
+    padding: 0;
+}
+#addAdvertise{
+    padding: 10px;
+}
+#agentModal label,#Addauthority  label{
+    min-width: 70px;
+    padding: 0;
+}
+#agentModal .info{
+    margin:5px 0;
+}
+#modifyAgentInfo  label{
+    min-width: 100px;
+    padding: 0;
+}
+#modifyAgentInfo .info{
+    margin:5px 0;
+}
+#AddRole label,#AddResource label{
+    min-width: 80px;
+    padding: 0;
+}
+/*.refuse-textarea{
+  width:550px;
+  height:135px;
+  border-radius: 2px ;
+}
+.refuse-label{
+  width:62px;
+  height:15px;
+  font-size:16px;
+  font-family:PingFang-SC-Regular;
+  line-height:40px;
+}*/
+
+/*���?*/
+
+.shenga-panel-panel{
+    border: 1px solid #E6EAEE;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+.shenga-panel-inner{
+    background: #FFFFFF;
+    text-align: center;
+    height: 110px;
+    border-bottom: 1px solid #E6EAEE;
+
+}
+.shenga-panel-inner .panel-user{
+    color:#52AFFF;
+}
+.shenga-panel-inner .panel-business{
+    color:#2A92EB;
+}
+.shenga-panel-inner .panel-business-total{
+    color:#0070D0;
+}
+.shenga-panel-inner .panel-user-total{
+    color:#21BB39;
+}
+.shenga-panel-inner .panel-yesterday-order{
+    color:#21BB39;
+}
+.shenga-panel-inner .panel-order{
+    color:#F2A80A;
+}
+.shenga-panel-inner .panel-balance{
+    color:#FC565E;
+}
+.shenga-panel-inner .panel-income{
+    color:#B015B2;
+}
+
+.shenga-panel-num{
+    font-size: 36px;
+    padding-top:20px;
+
+}
+.shenga-panel-title{
+    font-size:15px;
+    font-family:PingFang-SC-Regular;
+
+    padding-bottom: 20px;
+}
+.shenga-panel-footer{
+    background: #F5F8FA;
+    height: 50px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 50px;
+}
+.panel-circle-up{
+    color: #21BB39;
+    margin-right: 20px;
+}
+.panel-circle-down{
+    color: #F05352;
+    margin-right: 20px;
+}
+::-webkit-scrollbar {
+    width: 5px;
+    height: 4px;
+    background-color: #7a869d;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+
+}
+select{
+    vertical-align: middle;
+}
+
+/*�˻�һ��*/
+.shenga-userInfo{
+    background: #FFFFFF;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+.shenga-userInfo-password{
+    background-color: #1C82D4;
+    color: #FFFFFF;
+}
+.account-info{
+   border-radius: 4px;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.account-info-title{
+    font-size: 16px;
+    color: #353535;
+}
+#modifyAgentInfo .modifyInfo,#agentModal .modifyInfo{
+    width:155px;
+}

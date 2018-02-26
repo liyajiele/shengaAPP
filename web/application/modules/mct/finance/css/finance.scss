@@ -1,0 +1,193 @@
+
+
+.financebigbox{
+  background: #f0f0f0;
+  width: 7.5rem;
+  height:100%;
+  font-size: 0.28rem;
+  color:#353535 ;
+  
+
+  .fintop{
+    height: 1rem;
+    width:100%;
+    background: #fff;
+    border-bottom: 0.015rem solid #F0F0F0;
+    position: fixed;
+    z-index: 9999;
+
+      li{
+        width:33.3%;
+        height: 1rem;
+        line-height: 1rem;
+        background: #ffffff;
+        border-bottom: 0.01rem solid #f0f0f0;
+        float: left;
+        text-align: center;
+        font-size: 0.3rem;
+        font-weight: 600;
+
+
+          img{
+            width: 0.14rem;
+            height: 0.14rem;
+            margin-left: 0.05rem;
+          }
+
+
+      }
+    .active{
+      color: #1C82D4;
+    }
+  }
+
+//.finbot{
+//  height:100%;
+//  width:100%;
+//  position: relative;
+//  margin-top: 1rem;
+
+//  .time{
+//    height: 10.92rem;
+//    width:100%;
+//    background: rgba(0,0,0,0.6);
+//    position: absolute;
+//    top:0;
+//    left:0;
+//
+//    .timetop{
+//      height: 4rem;
+//      width:100%;
+//      background: #fff;
+//      
+////      .lian{
+////          width: 1rem;
+////          height: auto;
+////          float: left;
+////      }
+//    }
+//    .timebot{
+//      height: 1rem;
+//      width:100%;
+//      line-height: 1rem;
+//      font-size: 0.3rem;
+//      text-align: center;
+//      color: #1C82D4;
+//      background: #fff;
+//    }
+//
+//  }
+    .zindex{
+      z-index:1111;
+    }
+
+    .money{
+      height:auto;
+      width:7.5rem;
+      position: relative;
+      margin-top:1rem;
+      left:0;
+      z-index: 999;
+
+      ul{
+        width: 7.5rem;
+        height: 1rem;
+        line-height: 1rem;
+        background: #fff;
+        border-bottom: 0.015rem solid #F0F0F0;
+
+        li{
+          width:33%;
+          float: left;
+          text-align: center;
+
+          span{
+                font-size: 0.24rem;
+                display: block;
+                float: left;
+                text-align: center;
+                margin: 0 auto;
+                line-height: 1rem;
+              }
+              span:nth-child(1){
+                  margin-left: 0.9rem;
+              }
+        }
+
+        li:nth-child(1){
+          font-size: 0.2rem;
+          color: #888;
+        }
+        .add{
+          font-size: 0.24rem;
+//        color: #25D41C;
+        }
+        .red{
+            color: red;
+        }
+        .green{
+            color: #22c01a;
+        }
+        li:nth-child(3){
+          font-size: 0.24rem;
+        }
+      }
+
+    }
+
+    .alltype{
+      height: 100%;
+      width:100%;
+      font-size: 0.24rem;
+      position: fixed;
+      top: 1rem;
+      left:0;
+      background:rgba(0,0,0,0.6);
+      z-index: 999;
+      li{
+        background: #fff;
+        border-bottom:0.01rem solid #f0f0f0;
+        height: 1rem;
+        line-height: 1rem;
+        padding-left: 0.38rem;
+        width: 7.5rem;
+        font-size: 0.24rem;
+        
+
+        i{
+          height: 0.35rem;
+          width: 0.35rem;
+          float: right;
+          margin-right: 1rem;
+
+          img{
+            width: 0.35rem;
+          }
+        }
+      }
+      .bian{
+        color: #1C82D4;
+      }
+    }
+  
+  .bei{
+    height: 2.5rem;
+    position: fixed;
+    top: 3.48rem;
+    left: 2.94rem;
+    display: none;
+
+    img{
+      width: 1.62rem;
+      height: 1.92rem;
+      margin: 0 auto;
+    }
+
+    p{
+      text-align: center;
+      font-size: 0.26rem;
+      color: #888;
+      margin-top: 0.1rem;
+    }
+  }
+}

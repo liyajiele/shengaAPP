@@ -1,0 +1,54 @@
+.authenticationzhangxin{
+    height: 100%;
+    width: 7.5rem;
+    background: #FFFFFF;
+    h1{
+        font-size: 0.46rem;
+        font-weight:bold ;
+        margin-top: 1.25rem;
+        text-align: center;
+    }
+    h2{
+        margin-top: 0.26rem;
+        font-size: 0.3rem;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        font-size: 0.28rem;
+        margin: 0 auto;
+        width: 51%;
+        margin-bottom: 0.5rem;
+        float: left;
+        margin-left: 30%;
+        
+        img{
+            width: 0.34rem;
+            height: 0.23rem;
+            margin-right: 0.3rem;
+            margin-top: 0.05rem;
+            float: left;
+        }
+        span{
+            float: left;
+        }
+    }
+    button{
+        width: 6.8rem;
+        height: 1rem;
+        line-height: 1rem;
+        text-align: center;
+        color: #FFFFFF;
+        font-size: 0.3rem;
+        background: #1C82D4;
+        border-radius: 4px;
+        margin-top: 2rem;
+        margin-left: 0.35rem;
+    }
+    h3{
+        font-size: 0.3rem;
+        margin-right: 0.5rem;
+        margin-top: 0.45rem;
+        color: #1C82D4;
+    }
+}

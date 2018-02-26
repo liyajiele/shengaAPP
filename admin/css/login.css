@@ -1,0 +1,54 @@
+/*title*/
+.skin-blue .main-header .navbar .sidebar-toggle {
+    color: #868686;
+}
+.skin-blue .main-header .navbar .sidebar-toggle:hover {
+    background-color: #FFFFFF;
+}
+.skin-blue .main-header .logo:hover {
+    background-color: #222C3C;
+}
+.skin-blue .main-header .logo {
+    font-size: 20px;
+    background-color: #222C3C;
+    color: #fff;
+    border-bottom: 0 solid transparent;
+}
+.skin-blue .main-header .navbar {
+    background-color: #fff;
+}
+
+.backImg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../static/static/img/login.png");
+    background-size:100% 100%
+}
+.loginForm .form-control,.login{
+    width: 270px !important;
+}
+.loginForm label{
+    color: #e0e0e0;
+}
+.loginForm .login{
+    margin-bottom: 10px;
+}
+
+.loginForm{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-30%);
+}
+.loginForm .forget{
+    margin-left:200px;
+}
+.forget,.forget:focus,.forget:visited,.forget:hover{
+    text-decoration: none;
+    outline: none;
+    color: #e0e0e0;
+}
+.loginForm .forget:hover{
+    cursor:pointer;
+}

@@ -1,0 +1,108 @@
+.collectbigbox {
+  width: 7.5rem;
+  height: 100%;
+  background: #f0f0f0;
+  color: #353535; }
+  .collectbigbox .list_content {
+    width: 100%;
+    heigth: auto; }
+    .collectbigbox .list_content li {
+      float: left;
+      background: #fff;
+      heigth: 2.58rem;
+      margin-bottom: 0.1rem;
+      float: left; }
+      .collectbigbox .list_content li .seller_avatar {
+        width: 2rem;
+        height: 2rem;
+        margin-top: .2rem;
+        margin-bottom: 0.2rem;
+        float: left; }
+      .collectbigbox .list_content li .seller_infos {
+        width: 5.25rem;
+        height: 2rem;
+        margin-left: .25rem;
+        margin-top: .2rem;
+        margin-bottom: 0.2rem;
+        float: left; }
+        .collectbigbox .list_content li .seller_infos .seller_name {
+          color: #353535;
+          font-size: .34rem;
+          width: 3.5rem;
+          line-height: .34rem;
+          overflow: hidden;
+          float: left; }
+        .collectbigbox .list_content li .seller_infos .seller_distence {
+          width: 1rem;
+          font-size: .28rem;
+          color: #888888;
+          float: right;
+          margin-right: 0.4rem;
+          text-align: right; }
+        .collectbigbox .list_content li .seller_infos .seller_position {
+          color: #a9a9a9;
+          width: 100%;
+          height: .32rem;
+          margin-top: .2rem;
+          float: left;
+          line-height: 0.32rem; }
+          .collectbigbox .list_content li .seller_infos .seller_position img {
+            width: .23rem;
+            height: .3rem;
+            float: left;
+            margin-right: 0.1rem; }
+          .collectbigbox .list_content li .seller_infos .seller_position span {
+            float: left;
+            font-size: 0.28rem; }
+          .collectbigbox .list_content li .seller_infos .seller_position div {
+            font-size: .28rem;
+            color: #888888;
+            height: .32rem;
+            line-height: .32rem;
+            overflow: hidden;
+            float: left; }
+        .collectbigbox .list_content li .seller_infos .start {
+          width: 3rem;
+          float: left;
+          margin-top: 0.6rem;
+          height: 0.6rem;
+          line-height: 0.6rem; }
+          .collectbigbox .list_content li .seller_infos .start .rating {
+            color: #a9a9a9;
+            margin: 0;
+            padding: 0; }
+          .collectbigbox .list_content li .seller_infos .start ul.rating {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            float: left; }
+          .collectbigbox .list_content li .seller_infos .start .rating li {
+            display: inline-block;
+            padding-right: 1px;
+            text-align: center;
+            font-weight: bold;
+            cursor: pointer;
+            margin-right: 0.1rem; }
+          .collectbigbox .list_content li .seller_infos .start .rating .filled {
+            color: #ffba15; }
+        .collectbigbox .list_content li .seller_infos .pay_btn {
+          width: 0.4rem;
+          height: 0.4rem;
+          margin-right: 0.4rem;
+          margin-top: 0.7rem;
+          -webkit-border-radius: .08rem;
+          float: right;
+          position: relative; }
+          .collectbigbox .list_content li .seller_infos .pay_btn img {
+            width: 100%;
+            float: left; }
+          .collectbigbox .list_content li .seller_infos .pay_btn .fff {
+            position: absolute;
+            top: 0;
+            left: 0; }
+          .collectbigbox .list_content li .seller_infos .pay_btn .red {
+            position: absolute;
+            top: 0;
+            left: 0; }
+
+/*# sourceMappingURL=collect.css.map */

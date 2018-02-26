@@ -1,0 +1,44 @@
+.aboutourbigbox {
+  height: 100%;
+  width: 7.5rem;
+  background: #f0f0f0;
+  font-size: 0.28rem;
+  color: #353535; }
+  .aboutourbigbox .boxtop {
+    height: 3.6rem;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 0.1rem;
+    float: left;
+    background: url(../../../../../images/people/back.jpg) no-repeat;
+    background-size: contain; }
+    .aboutourbigbox .boxtop .boxtopimg {
+      margin-top: 0.8rem;
+      width: 1.3rem;
+      height: 1.3rem;
+      border-radius: 0.1rem;
+      margin-left: 3.1rem; }
+      .aboutourbigbox .boxtop .boxtopimg img {
+        width: 100%; }
+    .aboutourbigbox .boxtop p {
+      width: 100%;
+      text-align: center;
+      color: #888;
+      font-weight: 700;
+      margin-top: 0.1rem; }
+  .aboutourbigbox .boxbottom {
+    height: 5.7rem;
+    width: 7.5rem;
+    float: left; }
+    .aboutourbigbox .boxbottom p {
+      height: 1rem;
+      background: #fff;
+      line-height: 1rem;
+      padding-left: 0.4rem;
+      border-bottom: 0.015rem; }
+      .aboutourbigbox .boxbottom p span {
+        float: right;
+        margin-right: 0.4rem;
+        color: #888; }
+
+/*# sourceMappingURL=aboutour.css.map */

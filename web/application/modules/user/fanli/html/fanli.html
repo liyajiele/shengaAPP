@@ -1,0 +1,71 @@
+<div class="fanlibigbox">
+    <ul class="fintop">
+        <li>订单号</li>
+        <li>用户</li>
+        <li>返利金额</li>
+        <li ng-click="active()" ng-class="{'active':xuan==false}">时间<i><img src="images/money/time.png" alt=""></i></li>
+    </ul>
+	<div class="main_page" ng-show="xuan==false">
+        <div class="select_start_date">
+            <div class="start_date_left">
+                开始时间
+            </div>
+            <div class="start_date_right">
+                <input type="text" name="start_date" id="start_date" placeholder="选择开始日期" readonly="readonly"  value=""/>
+            </div>
+        </div>
+        <div class="select_start_date">
+            <div class="start_date_left">
+                结束时间
+            </div>
+            <div class="start_date_right">
+                <input type="text" name="end_date" id="end_date" placeholder="选择开始日期" readonly="readonly" value=""/>
+            </div>
+        </div>
+        <p ng-click="active1()">完成</p>
+    </div>
+    
+	<div class="fanbot" infinite-scroll='fanli.fanli(uid)' infinite-scroll-disabled='fanli.fanliBusy' infinite-scroll-distance='1'>
+        <ul ng-repeat="fanli in fanli.fanliArray">
+            <li ng-bind="fanli.orderNum"></li>
+            <li ng-bind="fanli.user.nickname"></li>
+            <li ><span>￥</span><span ng-bind="fanli.rebate.toFixed(2)"></span></li>
+            <li ng-bind="fanli.createTime|date:'yyyy-MM-dd'"></li>
+        </ul>
+    </div>
+
+    <div class="fandi">
+	        <div class="ji">共<span ng-bind="fanli.finishnum"></span>条记录</div>
+	        <div class="li">共返利 <span ng-bind="fanli.finishBalancenum.toFixed(2)"></span>元</div>
+	    </div>
+    
+    
+    <div class="bei">
+        <img src="images/money/no.png" alt="">
+        <p>暂无订单</p>
+    </div>
+
+    
+
+    
+</div>
+<script type="text/javascript">
+  var calendar = new LCalendar();
+  calendar.init({
+    'trigger': '#start_date', //标签id
+    'type': 'date', //date 调出日期选择 datetime 调出日期时间选择 time 调出时间选择 ym 调出年月选择,
+    'minDate': (new Date().getFullYear()-300) + '-' + 1 + '-' + 1, //最小日期
+    'maxDate': (new Date().getFullYear()+300) + '-' + 12 + '-' + 31 //最大日期
+  });
+  var calendar = new LCalendar();
+  calendar.init({
+    'trigger': '#end_date', //标签id
+    'type': 'date', //date 调出日期选择 datetime 调出日期时间选择 time 调出时间选择 ym 调出年月选择,
+    'minDate': (new Date().getFullYear()-300) + '-' + 1 + '-' + 1, //最小日期
+    'maxDate': (new Date().getFullYear()+300) + '-' + 12 + '-' + 31 //最大日期
+  });
+  //		$(function() {
+  //			$('#start_date').date();
+  //			$('#end_date').date();
+  //		});
+</script>

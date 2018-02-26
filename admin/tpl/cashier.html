@@ -1,0 +1,23 @@
+<section class="content-header">
+    <h1>出纳提现管理</h1>
+</section>
+<section class="content">
+    <div>
+        <div class="shenga-title">
+            <div class="shenga-title-left">
+                <select name="" ng-model="params.tType" style="width: 120px">
+                    <option value="1">用户</option>
+                    <option value="2">商户</option>
+                    <option value="3" >代理商</option>
+                </select>
+                <button id="searchStatus" class="btn btn-xs btn-primary" ng-click="search()">查询</button>
+            </div>
+        </div>
+            <div style="background: #fff">
+                <table id="draw-table" class="table"></table>
+            </div>
+        </div>
+
+    </div>
+</section>
+

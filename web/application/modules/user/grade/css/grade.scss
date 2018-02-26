@@ -1,0 +1,69 @@
+
+.gradewell{
+    height:100%;
+    width: 7.5rem;
+    background: #f0f0f0;
+    font-size: 0.28rem;
+  color:#353535 ;
+    
+    .gradetop{
+        width: 7.5rem;
+        height: 1.4rem;
+        line-height: 1.4rem;
+        background: #fff;
+        border-bottom: 0.01rem solid #f0f0f0;
+        
+        span{
+            font-size: 0.34rem;
+            margin-left: 0.4rem;
+            float: left;
+            padding-right:0.2rem;
+        }
+        .start{
+            text-align: center;
+            width: 4rem;
+            height: 100%;
+            float: left;
+            
+            .rating {
+                color: #a9a9a9;
+                margin: 0;
+                padding: 0;
+            }
+            ul.rating {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+            }
+            .rating li {
+//              list-style-type: none;
+                display: inline-block;
+                padding: 1px;
+                text-align: center;
+                font-weight: bold;
+                cursor: pointer;
+                margin-left: 0.2rem;
+                
+                i{
+                    font-size: 0.54rem;
+                }
+            }
+            .rating .filled {
+                color: #ffba15;
+            }
+        }
+      }  
+      .fabu{
+            height: 1rem;
+            width: 100%;
+            line-height: 1rem;
+             color: #FF9E14;
+             text-align: center;
+             background: #FFFEFE;
+         }
+        
+
+    }
+    
+    
+
